@@ -1,0 +1,375 @@
+---
+title: "0401 Travel Time Variability Analysis"
+output: html_notebook
+---
+
+```{r include = FALSE}
+wd = "~/msc applied social data science/data/London/TfL/TfL API/Travel Options"
+library(dplyr)
+library(tidyr)
+library(dbplyr)
+library(ggplot2)
+```
+
+## Data Prep
+### Read in AM peak baseline fastest option data
+```{r}
+db <- DBI::dbConnect(RSQLite::SQLite(), paste0(wd,'/20190322_0830/traveloptions.db'))
+baseline_traveloptions <- tbl(db, 'traveloptions')
+baseline_fastestoption <- tbl(db, sql('SELECT orig_id, dest_id, option_id, MIN(traveltime) FROM (SELECT orig_id, dest_id, option_id, traveltime FROM traveloptions WHERE legs_cycle = 0) GROUP BY orig_id, dest_id'))
+baseline_fastestoption <- left_join(baseline_fastestoption, baseline_traveloptions, by = c('orig_id', 'dest_id', 'option_id')) %>% collect()
+baseline_fastestoption$`MIN(traveltime)` <- NULL
+
+# clean up
+colnames(baseline_fastestoption)[c(30,31,32,42:47)] <- c('dist_nationalrail', 'legs_nationalrail', 'time_nationalrail', 'dist_riverbus', 'legs_riverbus', 'time_riverbus', 'dist_replacementbus', 'legs_replacementbus', 'time_replacementbus') # rename columns to remove dashes
+dist_columns <- colnames(baseline_fastestoption)[ which(substr(colnames(baseline_fastestoption), 1, 4) == 'dist')] # convert distances to km
+baseline_fastestoption[,dist_columns] <- baseline_fastestoption[,dist_columns] / 1000
+rm(baseline_traveloptions, dist_columns)
+DBI::dbDisconnect(db)
+```
+Successfully read `r nrow(baseline_fastestoption)` OD pairs of data. Available columns: `r colnames(baseline_fastestoption)`.
+
+### Read in observed AM peak fastest option data for 983 origins and 7 destinations
+```{r}
+## obtain directories
+dirs <- list.dirs(wd, recursive = F)
+dirs <- dirs[(1:length(dirs))[substr(dirs, nchar(wd) + 41, nchar(wd) + 47) == 'ampeak']]
+
+## compile data
+obs <- data.frame()
+obs_i <- 1
+for (dir in dirs) {
+  if ('traveloptions_to_cityplus6clusters.db' %in% list.files(dir)) {
+    db <- DBI::dbConnect(RSQLite::SQLite(), paste0(dir,'/traveloptions_to_cityplus6clusters.db'))
+    fastestoption <- tbl(db, sql('SELECT orig_id, dest_id, MIN(traveltime) FROM (SELECT orig_id, dest_id, traveltime FROM traveloptions WHERE legs_cycle = 0) GROUP BY orig_id, dest_id')) %>% collect()
+    fastestoption$obs_i <- obs_i
+    obs_i <- obs_i + 1
+    DBI::dbDisconnect(db)
+    
+    obs <- rbind(obs, fastestoption)
+  }
+}
+
+## clean up
+rm(fastestoption)
+rm(db, dir, dirs, obs_i)
+colnames(obs) <- c('orig_id', 'dest_id', 'traveltime', 'obs')
+```
+Successfully read `r nrow(obs)` observations of actual trip options.
+
+```{r}
+## calculate statistics of observed distribution of travel times and generate regressiondf
+odpair_traveltime <- obs %>% group_by(orig_id,dest_id) %>% summarise(median_traveltime = quantile(traveltime, .5), traveltime_5pc = quantile(traveltime, .05), traveltime_95pc = quantile(traveltime, .95))
+regressiondf <- left_join(odpair_traveltime, baseline_fastestoption, by = c('orig_id','dest_id'))
+regressiondf$traveltime_95pc_minus_median <- regressiondf$traveltime_95pc - regressiondf$median_traveltime
+regressiondf$traveltime_95pc_minus_5pc <- regressiondf$traveltime_95pc - regressiondf$traveltime_5pc
+```
+
+Successfully compiled `r nrow(regressiondf)` OD pairs of data on the distribution of observed travel times.  Available columns: `r colnames(regressiondf)`
+
+### Construct travel time matrix
+```{r warning = F}
+ttm_baseline_fastestoption <- baseline_fastestoption[,c('orig_id','dest_id','traveltime')] %>% filter(dest_id %in% c('E02000001','E02000384','E02000455','E02000558','E02000649','E02000664','E02000779')) %>% spread(key = 'dest_id', value = 'traveltime')
+rownames(ttm_baseline_fastestoption) <- ttm_baseline_fastestoption$orig_id
+ttm_baseline_fastestoption$orig_id <- NULL
+ttm_baseline_fastestoption[c(1:5),c(1:5)] # print first 5 x 5 square of data
+```
+
+### Calculate similarity of travel times between all pairs of MSOAs based on Euclidean Distance of travel times to 7 destinations
+```{r}
+dist_baseline_fastestoption <- as.matrix(dist(ttm_baseline_fastestoption))
+dim(dist_baseline_fastestoption)
+dist_baseline_fastestoption[c(1:5),c(1:5)] # print first 5 x 5 square of data
+```
+### Helper functions for regressions
+```{r}
+# function to prep dataframes to contain the results
+prep_results_containers <- function(distance_matrix, regressiondf, ivs) {
+  results_coef <- data.frame(matrix(nrow = nrow(distance_matrix), ncol = length(ivs)), row.names = rownames(distance_matrix))
+  colnames(results_coef) <- ivs
+  results_pval <- results_coef
+  results_localrsqadj <- data.frame(local_rsq = rep(NA,nrow(ttm_baseline_fastestoption)), row.names = rownames(distance_matrix))
+  results_predictions <- data.frame(matrix(nrow = nrow(regressiondf), ncol = length(ivs)), row.names = rownames(regressiondf))
+  colnames(results_predictions) <- ivs
+  results_containers_list <- list(results_coef, results_pval, results_localrsqadj, results_predictions)
+  names(results_containers_list) <- c('results_coef', 'results_pval', 'results_localrsqadj', 'results_predictions')
+  return(results_containers_list)
+}
+
+# function to carry out LWR
+locally_weighted_regression <- function(regressiondf, ivs, dv, distance_matrix, results_containers_list, criticalquantile = 1) {
+  rowsprocessed = 0
+  print(paste('Processing local regression for', nrow(distance_matrix), 'areas.'))
+  lm_formula <- as.formula(paste(dv, '~', paste(ivs, collapse = ' + ')))
+
+  for (orig in rownames(distance_matrix)) {
+    criticaldist <- quantile(distance_matrix[orig,], criticalquantile)
+    localcluster <- names(distance_matrix[orig,])[which(distance_matrix[orig,] <= criticaldist)]
+    regressiondf_local <- regressiondf %>% filter(orig_id %in% localcluster)
+
+    lm_local <- lm(lm_formula, data = regressiondf_local)
+    lm_local_summary <- summary(lm_local)$coefficients
+    
+    # assign local coef estimates to results
+    for (dv in ivs[c(2:length(ivs))]) {
+      results_containers_list$results_coef[orig,dv] <- lm_local_summary[,1][dv]
+    }
+    results_containers_list$results_coef[orig,'1'] <- lm_local_summary['(Intercept)',1]
+
+    # assign local coef pvals to results
+    for (dv in ivs[c(2:length(ivs))]) {
+      results_containers_list$results_pval[orig,dv] <- lm_local_summary[,4][dv]
+    }
+    results_containers_list$results_pval[orig,'1'] <- lm_local_summary['(Intercept)',4]
+    
+    # assign local rsq to results
+    results_containers_list$results_localrsqadj[orig,] <- summary(lm_local)$r.squared
+    
+    # monitor progress
+    rowsprocessed <- rowsprocessed + 1
+    if (rowsprocessed %% 100 == 0) {
+      print(rowsprocessed)
+    }
+    
+  }
+  # predict DV based on local regression coefficients
+  print('Predicting DV values')
+  results_coef_for_join <- results_containers_list$results_coef
+  results_coef_for_join$orig_id <- rownames(results_containers_list$results_coef)
+  regressiondf_results <- regressiondf[,c('orig_id', 'dest_id', ivs[2:length(ivs)])] %>% left_join(results_coef_for_join, by = 'orig_id')
+  results_containers_list$results_predictions[,'1'] <- regressiondf_results[,'1']
+  
+  for (dv in ivs[2:length(ivs)]) {
+    results_containers_list$results_predictions[,dv] <- regressiondf_results[,paste0(dv,'.x')] * regressiondf_results[,paste0(dv,'.y')]
+  }
+  results_containers_list$results_predictions$prediction <- rowSums(results_containers_list$results_predictions, na.rm = T)
+  print('Completed.')
+  return(results_containers_list)
+}
+
+# function to plot outputs
+plot_results <- function(regressiondf, results_predictions, dv, title, xlabel, ylabel) {
+  pseudo_rsq <- round(1 - sum((unlist(regressiondf[,dv]) - results_predictions$prediction)^2) / sum((unlist(regressiondf[,dv]) - mean(unlist(regressiondf[,dv])))^2), 2)
+  plot(unlist(regressiondf[,dv]), results_predictions$prediction, xlab = xlabel, ylab = ylabel)
+  lines(c(0,200),c(0,200), col = 'red')
+  title(paste(c(title, '| Spearman Corr:', round(cor(regressiondf[,dv], results_predictions$prediction, method = 'spearman'), 2), '| Pseudo Rsq:', pseudo_rsq), collapse = ' '))
+}
+```
+## Vanilla OLS Regression
+### Set up regression variables
+```{r}
+dv <- 'traveltime_95pc_minus_5pc'
+ivs <- c('1','dist_bus','dist_coach','dist_dlr','dist_nationalrail','dist_overground','dist_riverbus','dist_tflrail','dist_tram','dist_tube','dist_walking')
+lm_formula <- as.formula(paste(dv, '~', paste(ivs, collapse = ' + ')))
+```
+For each OD pair, we regress the width of the 90% HPD interval of observed travel times against the distance covered by mode for the baseline fastest option.  The motivation is that the more an OD pair is reliant on certain modes, the more variable the travel times may be.
+
+### Regression results
+```{r}
+lm_global <- (lm(lm_formula, data = regressiondf))
+summary(lm_global)
+```
+The amount of distance covered by mode turns out not to explain a lot of the variance in the 90% HPD interval width for travel times.  But increasing reliance on bus, National Rail, TfL Rail, Overground and walking seems correlated with wider 90% HPD intervals.
+```{r}
+plot_results(regressiondf, data.frame(predictions = lm_global$fitted.values), dv, 'OLS Regression\n', 'Actual 90% HPD Interval Width', 'Predicted 90% HPD Interval Width')
+
+```
+
+## Locally Weighted Regression
+### Set up dataframes to store results
+```{r}
+results_lwr01 <- prep_results_containers(dist_baseline_fastestoption, regressiondf, ivs)
+```
+### Carry out locally weighted regression
+```{r}
+results_lwr01 <- locally_weighted_regression(regressiondf, ivs, dv, dist_baseline_fastestoption, results_lwr01, .03)
+```
+
+```{r}
+plot_results(regressiondf, results_lwr01$results_predictions, dv, 'Locally Weighted Regression 30 Most Similar Neighbours\n', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
+```
+## OLS Regression with Local Spillovers
+### Prepare weighted mean of DV for neighbours of each area
+```{r}
+regressiondf$dv_local_mean <- 0
+for (row in 1:nrow(regressiondf)) {
+  orig <- regressiondf[row,]$orig_id
+  dest <- regressiondf[row,]$dest_id
+  criticaltime <- quantile(dist_baseline_fastestoption[orig,], .005) # 5 nearest neighbours
+  localcluster <- names(dist_baseline_fastestoption[orig,])[which(dist_baseline_fastestoption[orig,] <= criticaltime)]
+  localcluster <- setdiff(localcluster, orig) # exclude current pair from local cluster
+  dv_local_mean <- regressiondf[,c('orig_id','dest_id',dv)] %>% filter(orig_id %in% localcluster & dest_id == dest)
+  regressiondf[row,]$dv_local_mean <- mean(unlist(dv_local_mean[,dv]))
+}
+
+plot(unlist(regressiondf[,dv]), regressiondf$dv_local_mean, xlab = '90% HPD Interval Width', ylab = 'Local Mean of 90% HPD Interval Width')
+```
+```{r include = FALSE}
+library(rgdal)
+library(tmap)
+```
+### Read in spatial data
+```{r results = 'hide'}
+msoas <- readOGR(dsn = '../90 Data/GLA', layer = 'MSOA_2011_London_gen_MHW') # read in MSOAs shapefile
+msoas <- spTransform(msoas, CRS('+init=epsg:27700')) # reproject to British National Grid
+msoas <- msoas[,'MSOA11CD']
+londontube <- readOGR(dsn = '../90 Data/misc', layer = 'londontube')
+londontube <- spTransform(londontube, CRS('+init=epsg:27700'))
+londonrail <- readOGR(dsn = '../90 Data/misc', layer = 'Tracks')
+londonrail <- spTransform(londonrail, CRS('+init=epsg:27700'))
+```
+### Visualise calculation of local mean for Stratford, E02000726
+```{r fig.width = 9, fig.height = 8}
+# compile data for Stratford
+stratford_localcluster <- data.frame(dist_baseline_fastestoption['E02000726',])
+colnames(stratford_localcluster) <- 'euclidean_dist'
+stratford_localcluster$'MSOA Type' <- 'Excluded from Local Regression'
+stratford_localcluster[ which(stratford_localcluster$euclidean_dist < quantile(stratford_localcluster$euclidean_dist, .03)),]$'MSOA Type' <- 'Included in Local Regression'
+stratford_localcluster[ which(stratford_localcluster$euclidean_dist < quantile(stratford_localcluster$euclidean_dist, .005)),]$'MSOA Type' <- 'Included in LR and DV Local Mean Calculation'
+stratford_localcluster['E02000726','MSOA Type'] <- 'Stratford: Included in LR'
+
+# compile data for 7 destinations
+destinations <- msoas %>% subset(MSOA11CD %in% c('E02000001','E02000384','E02000455','E02000558','E02000649','E02000664','E02000779'))
+
+# join to spatial data
+stratford_localcluster_spatial <- msoas
+stratford_localcluster_spatial@data <- left_join(stratford_localcluster_spatial@data, tibble::rownames_to_column(stratford_localcluster), by = c('MSOA11CD' = 'rowname'))
+
+# plot map
+tmap_mode('plot') # set to plotting mode
+tm_shape(stratford_localcluster_spatial) + 
+  tm_polygons('MSOA Type', palette = 'Paired') +
+tm_shape(destinations) + 
+  tm_borders(col = 'red') +
+tm_shape(londontube) + 
+  tm_lines(lwd = .1, col = 'black') +
+tm_shape(londonrail) + 
+  tm_lines(lwd = .1, col = 'black') +
+tm_layout(main.title = 'MSOAs Involved in Local Regression Calculations for Stratford', main.title.position = 'center', legend.position = c('left','bottom'))
+```
+
+
+### Redeclare regression variables to include local mean of DV
+```{r}
+dv <- 'traveltime_95pc_minus_5pc'
+ivs <- c('1','dv_local_mean','dist_bus','dist_coach','dist_dlr','dist_nationalrail','dist_overground','dist_riverbus','dist_tflrail','dist_tram','dist_tube','dist_walking')
+lm_formula <- as.formula(paste(dv, '~', paste(ivs, collapse = ' + ')))
+```
+### Execute OLS Regression with Local Spillovers
+
+```{r}
+lm_global_local_spillovers <- lm(lm_formula, data = regressiondf)
+summary(lm_global_local_spillovers)
+```
+Adding local spillovers significantly improves the fit of the model.  If neighbours' 90% HPD interval widths are high, then own interval width also tends to be high.  After controlling for this, increased reliance on bus, National Rail and Overground tend to increase the interval width, while tram tends to decrease the interval width.
+
+## Locally Weighted Regression with Local Spillovers
+### Set up dataframes to store results
+```{r}
+results_lwr02 <- prep_results_containers(dist_baseline_fastestoption, regressiondf, ivs)
+```
+### Carry out locally weighted regression
+```{r}
+results_lwr02 <- locally_weighted_regression(regressiondf, ivs, dv, dist_baseline_fastestoption, results_lwr02, .03)
+```
+
+```{r}
+plot_results(regressiondf, results_lwr02$results_predictions, dv, 'Locally Weighted Regression with Local Spillovers\n', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
+```
+```{r fig.height = 5, fig.width = 20}
+par(mfrow = c(1,4))
+plot_results(regressiondf, data.frame(prediction = lm_global$fitted.values), dv, 'OLS', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
+plot_results(regressiondf, data.frame(prediction = lm_global_local_spillovers$fitted.values), dv, 'OLS with Spillovers', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
+plot_results(regressiondf, results_lwr01$results_predictions, dv, 'LWR', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
+plot_results(regressiondf, results_lwr02$results_predictions, dv, 'LWR with Spillovers', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
+```
+## Visualisation of Coefficients
+### join results
+```{r}
+results_lwr02_coefs_spatial <- msoas # creating a copy to work with
+results_lwr02_coefs_spatial@data <- left_join(results_lwr02_coefs_spatial@data, tibble::rownames_to_column(results_lwr02$results_coef), by = c('MSOA11CD' = 'rowname')) # joining results to spatial
+rownames(results_lwr02_coefs_spatial@data) <- results_lwr02_coefs_spatial@data$MSOA11CD # shift MSOA IDs to rownames
+results_lwr02_coefs_spatial@data$MSOA11CD <- NULL
+
+results_lwr02_pvals_spatial <- msoas # creating a copy to work with
+results_lwr02_pvals_spatial@data <- left_join(results_lwr02_pvals_spatial@data, tibble::rownames_to_column(results_lwr02$results_pval), by = c('MSOA11CD' = 'rowname')) # joining results to spatial
+rownames(results_lwr02_pvals_spatial@data) <- results_lwr02_pvals_spatial@data$MSOA11CD # shift MSOA IDs to rownames
+results_lwr02_pvals_spatial@data$MSOA11CD <- NULL
+
+# masking away coef estimates if pval < .1
+# using https://stackoverflow.com/questions/39412241/uncover-values-of-one-data-frame-with-another-mask-data-frame
+is.na(results_lwr02_coefs_spatial@data) <- !as.matrix(results_lwr02_pvals_spatial@data < .1)
+
+```
+### Visualise data
+```{r fig.width = 24, fig.height = 18}
+tmap_mode('plot') # set to plotting mode
+tm_shape(results_lwr02_coefs_spatial) + 
+  tm_fill(c(colnames(results_lwr02_coefs_spatial@data)), palette = '-RdYlGn') +
+tm_shape(londontube) + 
+  tm_lines(lwd = .1, col = 'black') +
+tm_shape(londonrail) + 
+  tm_lines(lwd = .1, col = 'black') + 
+tm_facets(ncol = ceiling(ncol(results_lwr02_coefs_spatial@data) / 3), nrow = floor(ncol(results_lwr02_coefs_spatial) / 3), sync = T) + 
+tm_layout(main.title = 'MSOA Level Coefficient Estimates', main.title.position = 'center', legend.position = c('left','bottom'))
+```
+```{r fig.width = 24, fig.height = 18}
+tmap_mode('plot') # set to plotting mode
+tm_shape(results_lwr02_pvals_spatial) + 
+  tm_fill(c(colnames(results_lwr02_pvals_spatial@data)), palette = 'Blues') +
+tm_shape(londontube) + 
+  tm_lines(lwd = .1, col = 'black') +
+tm_shape(londonrail) + 
+  tm_lines(lwd = .1, col = 'black') + 
+tm_facets(ncol = ceiling(ncol(results_lwr02_pvals_spatial@data) / 3), nrow = floor(ncol(results_lwr02_pvals_spatial) / 3), sync = T) + 
+tm_layout(main.title = 'MSOA Level Coefficient P-values', main.title.position = 'center', legend.position = c('left','bottom'))
+```
+## Visualisation of Residuals
+### compile and join results
+```{r}
+destnames <- c('City', 'Hammersmith', 'Harrow-on-the-Hill', 'Finsbury Park', 'Streatham', 'Lewisham', 'Ilford')
+names(destnames) <- c('E02000001','E02000384','E02000455','E02000558','E02000649','E02000664','E02000779')
+
+residuals_lm_global <- unlist(regressiondf[,dv]) - lm_global$fitted.values
+residuals_lm_global <- data.frame(cbind(regressiondf$orig_id, regressiondf$dest_id, residuals_lm_global), row.names = c(1:nrow(regressiondf)))
+colnames(residuals_lm_global) <- c('orig_id','dest_id','Residual')
+residuals_lm_global$Residual <- as.numeric(as.character(residuals_lm_global$Residual))
+residuals_lm_global$model <- '1 OLS'
+
+residuals_lm_global_local_spillovers <- unlist(regressiondf[,dv]) - lm_global_local_spillovers$fitted.values
+residuals_lm_global_local_spillovers <- data.frame(cbind(regressiondf$orig_id, regressiondf$dest_id, residuals_lm_global_local_spillovers), row.names = c(1:nrow(regressiondf)))
+colnames(residuals_lm_global_local_spillovers) <- c('orig_id','dest_id','Residual')
+residuals_lm_global_local_spillovers$Residual <- as.numeric(as.character(residuals_lm_global_local_spillovers$Residual))
+residuals_lm_global_local_spillovers$model <- '2 OLS with Local Spillovers'
+
+residuals_lwr01 <- unlist(regressiondf[,dv]) - results_lwr01$results_predictions$prediction
+residuals_lwr01 <- data.frame(cbind(regressiondf$orig_id, regressiondf$dest_id, residuals_lwr01), row.names = c(1:nrow(regressiondf)))
+colnames(residuals_lwr01) <- c('orig_id','dest_id','Residual')
+residuals_lwr01$Residual <- as.numeric(as.character(residuals_lwr01$Residual))
+residuals_lwr01$model <- '3 LWR'
+
+residuals_lwr02 <- unlist(regressiondf[,dv]) - results_lwr02$results_predictions$prediction
+residuals_lwr02 <- data.frame(cbind(regressiondf$orig_id, regressiondf$dest_id, residuals_lwr02), row.names = c(1:nrow(regressiondf)))
+colnames(residuals_lwr02) <- c('orig_id','dest_id','Residual')
+residuals_lwr02$Residual <- as.numeric(as.character(residuals_lwr02$Residual))
+residuals_lwr02$model <- '4 LWR with Local Spillovers'
+
+residuals_4regressions <- rbind(residuals_lm_global, residuals_lm_global_local_spillovers, residuals_lwr01, residuals_lwr02)
+residuals_4regressions$dest_id <- destnames[residuals_4regressions$dest_id]
+residuals_4regressions_spatial <- msoas # creating a copy to work with
+residuals_4regressions_spatial@data <- left_join(residuals_4regressions, residuals_4regressions_spatial@data, by = c('orig_id' = 'MSOA11CD')) # joining results to spatial
+rm(residuals_lm_global, residuals_lm_global_local_spillovers, residuals_lwr01, residuals_lwr02)
+
+```
+```{r fig.width = 11, fig.height = 10}
+tmap_mode('plot') # set to plotting mode
+tm_shape(residuals_4regressions_spatial) + 
+  tm_fill('Residual', palette = 'RdYlGn', style = 'fixed', breaks = quantile(residuals_4regressions$Residual, c(0,.2,.4,.6,.8,1))) +
+tm_facets(by = c('dest_id','model'), sync = T) + 
+tm_layout(main.title = 'Residuals by Destination and Model')
+```
+## Write out useful data
+```{r}
+write.csv(results_lwr02$results_coef, 'results_lwr02_coefs.csv')
+```
+
