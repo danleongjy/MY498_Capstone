@@ -203,6 +203,7 @@ for (row in 1:nrow(regressiondf)) {
 }
 
 plot(unlist(regressiondf[,dv]), regressiondf$dv_local_mean, xlab = '90% HPD Interval Width', ylab = 'Local Mean of 90% HPD Interval Width')
+title(paste(c('Pearson Correlation between Interval Width and\nLocal Mean Interval Width:', round(cor(regressiondf[,dv], regressiondf$dv_local_mean), 2)), collapse = ''))
 ```
 ```{r include = FALSE}
 library(rgdal)
@@ -296,6 +297,11 @@ results_lwr02_pvals_spatial@data <- left_join(results_lwr02_pvals_spatial@data, 
 rownames(results_lwr02_pvals_spatial@data) <- results_lwr02_pvals_spatial@data$MSOA11CD # shift MSOA IDs to rownames
 results_lwr02_pvals_spatial@data$MSOA11CD <- NULL
 
+results_lwr02_localrsqadj_spatial <- msoas # creating a copy to work with
+results_lwr02_localrsqadj_spatial@data <- left_join(results_lwr02_localrsqadj_spatial@data, tibble::rownames_to_column(results_lwr02$results_localrsqadj), by = c('MSOA11CD' = 'rowname')) # joining results to spatial
+rownames(results_lwr02_localrsqadj_spatial@data) <- results_lwr02_localrsqadj_spatial@data$MSOA11CD # shift MSOA IDs to rownames
+results_lwr02_localrsqadj_spatial@data$MSOA11CD <- NULL
+
 # masking away coef estimates if pval < .1
 # using https://stackoverflow.com/questions/39412241/uncover-values-of-one-data-frame-with-another-mask-data-frame
 is.na(results_lwr02_coefs_spatial@data) <- !as.matrix(results_lwr02_pvals_spatial@data < .1)
@@ -313,10 +319,21 @@ tm_shape(londonrail) +
 tm_facets(ncol = ceiling(ncol(results_lwr02_coefs_spatial@data) / 3), nrow = floor(ncol(results_lwr02_coefs_spatial) / 3), sync = T) + 
 tm_layout(main.title = 'MSOA Level Coefficient Estimates', main.title.position = 'center', legend.position = c('left','bottom'))
 ```
+```{r fig.width = 9, fig.height = 8}
+tmap_mode('plot') # set to plotting mode
+tm_shape(results_lwr02_localrsqadj_spatial) + 
+  tm_fill('local_rsq', palette = 'Greens') +
+tm_shape(londontube) + 
+  tm_lines(lwd = .1, col = 'black') +
+tm_shape(londonrail) + 
+  tm_lines(lwd = .1, col = 'black') +
+tm_layout(main.title = 'Adjusted Rsq for Local Regression Fit', main.title.position = 'center', legend.position = c('left','bottom'))
+```
+
 ```{r fig.width = 24, fig.height = 18}
 tmap_mode('plot') # set to plotting mode
 tm_shape(results_lwr02_pvals_spatial) + 
-  tm_fill(c(colnames(results_lwr02_pvals_spatial@data)), palette = 'Blues') +
+  tm_fill(c(colnames(results_lwr02_pvals_spatial@data)), palette = 'Blues', style = 'fixed', breaks = c(0,.01,.05,.1,1)) +
 tm_shape(londontube) + 
   tm_lines(lwd = .1, col = 'black') +
 tm_shape(londonrail) + 
