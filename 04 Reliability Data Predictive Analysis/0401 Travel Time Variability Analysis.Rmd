@@ -158,8 +158,8 @@ plot_results <- function(regressiondf, results_predictions, dv, title, xlabel, y
 ## Vanilla OLS Regression
 ### Set up regression variables
 ```{r}
-dv <- 'traveltime_95pc_minus_5pc'
-ivs <- c('1','dist_bus','dist_coach','dist_dlr','dist_nationalrail','dist_overground','dist_riverbus','dist_tflrail','dist_tram','dist_tube','dist_walking')
+dv <- 'traveltime_95pc_minus_median'
+ivs <- c('1','transfers','dist_bus','dist_coach','dist_dlr','dist_nationalrail','dist_overground','dist_riverbus','dist_tflrail','dist_tram','dist_tube','dist_walking')
 lm_formula <- as.formula(paste(dv, '~', paste(ivs, collapse = ' + ')))
 ```
 For each OD pair, we regress the width of the 90% HPD interval of observed travel times against the distance covered by mode for the baseline fastest option.  The motivation is that the more an OD pair is reliant on certain modes, the more variable the travel times may be.
@@ -252,8 +252,8 @@ tm_layout(main.title = 'MSOAs Involved in Local Regression Calculations for Stra
 
 ### Redeclare regression variables to include local mean of DV
 ```{r}
-dv <- 'traveltime_95pc_minus_5pc'
-ivs <- c('1','dv_local_mean','dist_bus','dist_coach','dist_dlr','dist_nationalrail','dist_overground','dist_riverbus','dist_tflrail','dist_tram','dist_tube','dist_walking')
+dv <- 'traveltime_95pc_minus_median'
+ivs <- c('1','dv_local_mean','transfers','dist_bus','dist_coach','dist_dlr','dist_nationalrail','dist_overground','dist_riverbus','dist_tflrail','dist_tram','dist_tube','dist_walking')
 lm_formula <- as.formula(paste(dv, '~', paste(ivs, collapse = ' + ')))
 ```
 ### Execute OLS Regression with Local Spillovers
