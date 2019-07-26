@@ -63,6 +63,7 @@ odpair_traveltime <- obs %>% group_by(orig_id,dest_id) %>% summarise(median_trav
 regressiondf <- left_join(odpair_traveltime, baseline_fastestoption, by = c('orig_id','dest_id'))
 regressiondf$traveltime_95pc_minus_median <- regressiondf$traveltime_95pc - regressiondf$median_traveltime
 regressiondf$traveltime_95pc_minus_5pc <- regressiondf$traveltime_95pc - regressiondf$traveltime_5pc
+regressiondf$traveltime_95pc_minus_baseline <- regressiondf$traveltime_95pc - regressiondf$traveltime
 ```
 
 Successfully compiled `r nrow(regressiondf)` OD pairs of data on the distribution of observed travel times.  Available columns: `r colnames(regressiondf)`
