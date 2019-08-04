@@ -225,10 +225,10 @@ londonrail <- spTransform(londonrail, CRS('+init=epsg:27700'))
 # compile data for Stratford
 stratford_localcluster <- data.frame(dist_baseline_fastestoption['E02000726',])
 colnames(stratford_localcluster) <- 'euclidean_dist'
-stratford_localcluster$'MSOA Type' <- 'Excluded from Local Regression'
-stratford_localcluster[ which(stratford_localcluster$euclidean_dist < quantile(stratford_localcluster$euclidean_dist, .03)),]$'MSOA Type' <- 'Included in Local Regression'
-stratford_localcluster[ which(stratford_localcluster$euclidean_dist < quantile(stratford_localcluster$euclidean_dist, .005)),]$'MSOA Type' <- 'Included in LR and DV Local Mean Calculation'
-stratford_localcluster['E02000726','MSOA Type'] <- 'Stratford: Included in LR'
+stratford_localcluster$'MSOA Type' <- 'Excluded from Locally Weighted Regression (LWR)'
+stratford_localcluster[ which(stratford_localcluster$euclidean_dist < quantile(stratford_localcluster$euclidean_dist, .03)),]$'MSOA Type' <- 'Included in LWR'
+stratford_localcluster[ which(stratford_localcluster$euclidean_dist < quantile(stratford_localcluster$euclidean_dist, .005)),]$'MSOA Type' <- 'Included in LWR and Local Mean RBT Calculation'
+stratford_localcluster['E02000726','MSOA Type'] <- 'Stratford: Included in LWR'
 
 # compile data for 7 destinations
 destinations <- msoas %>% subset(MSOA11CD %in% c('E02000001','E02000384','E02000455','E02000558','E02000649','E02000664','E02000779'))
@@ -247,7 +247,7 @@ tm_shape(londontube) +
   tm_lines(lwd = .1, col = 'black') +
 tm_shape(londonrail) + 
   tm_lines(lwd = .1, col = 'black') +
-tm_layout(main.title = 'MSOAs Involved in Local Regression Calculations for Stratford', main.title.position = 'center', legend.position = c('left','bottom'))
+tm_layout(legend.position = c('left','bottom'), outer.margins = c(0,0,0,0), frame = F)
 ```
 
 
@@ -292,16 +292,19 @@ results_lwr02_coefs_spatial <- msoas # creating a copy to work with
 results_lwr02_coefs_spatial@data <- left_join(results_lwr02_coefs_spatial@data, tibble::rownames_to_column(results_lwr02$results_coef), by = c('MSOA11CD' = 'rowname')) # joining results to spatial
 rownames(results_lwr02_coefs_spatial@data) <- results_lwr02_coefs_spatial@data$MSOA11CD # shift MSOA IDs to rownames
 results_lwr02_coefs_spatial@data$MSOA11CD <- NULL
+colnames(results_lwr02_coefs_spatial@data) <- c('Intercept', 'Local Mean RBT', 'Transfers', 'Bus km', 'Coach km', 'DLR km', 'National Rail km', 'Overground km', 'Riverbus km', 'TfL Rail km', 'Tram km', 'Underground km', 'Walking km')
 
 results_lwr02_pvals_spatial <- msoas # creating a copy to work with
 results_lwr02_pvals_spatial@data <- left_join(results_lwr02_pvals_spatial@data, tibble::rownames_to_column(results_lwr02$results_pval), by = c('MSOA11CD' = 'rowname')) # joining results to spatial
 rownames(results_lwr02_pvals_spatial@data) <- results_lwr02_pvals_spatial@data$MSOA11CD # shift MSOA IDs to rownames
 results_lwr02_pvals_spatial@data$MSOA11CD <- NULL
+colnames(results_lwr02_pvals_spatial@data) <- c('Intercept', 'Local Mean RBT', 'Transfers', 'Bus km', 'Coach km', 'DLR km', 'National Rail km', 'Overground km', 'Riverbus km', 'TfL Rail km', 'Tram km', 'Underground km', 'Walking km')
 
 results_lwr02_localrsqadj_spatial <- msoas # creating a copy to work with
 results_lwr02_localrsqadj_spatial@data <- left_join(results_lwr02_localrsqadj_spatial@data, tibble::rownames_to_column(results_lwr02$results_localrsqadj), by = c('MSOA11CD' = 'rowname')) # joining results to spatial
 rownames(results_lwr02_localrsqadj_spatial@data) <- results_lwr02_localrsqadj_spatial@data$MSOA11CD # shift MSOA IDs to rownames
 results_lwr02_localrsqadj_spatial@data$MSOA11CD <- NULL
+colnames(results_lwr02_localrsqadj_spatial@data) <- c('Local Rsq Adj')
 
 # masking away coef estimates if pval < .1
 # using https://stackoverflow.com/questions/39412241/uncover-values-of-one-data-frame-with-another-mask-data-frame
@@ -309,7 +312,7 @@ is.na(results_lwr02_coefs_spatial@data) <- !as.matrix(results_lwr02_pvals_spatia
 
 ```
 ### Visualise data
-```{r fig.width = 24, fig.height = 18}
+```{r fig.width = 18, fig.height = 24}
 tmap_mode('plot') # set to plotting mode
 tm_shape(results_lwr02_coefs_spatial) + 
   tm_fill(c(colnames(results_lwr02_coefs_spatial@data)), palette = '-RdYlGn') +
@@ -317,8 +320,8 @@ tm_shape(londontube) +
   tm_lines(lwd = .1, col = 'black') +
 tm_shape(londonrail) + 
   tm_lines(lwd = .1, col = 'black') + 
-tm_facets(ncol = ceiling(ncol(results_lwr02_coefs_spatial@data) / 3), nrow = floor(ncol(results_lwr02_coefs_spatial) / 3), sync = T) + 
-tm_layout(main.title = 'MSOA Level Coefficient Estimates', main.title.position = 'center', legend.position = c('left','bottom'))
+tm_facets(ncol = 3, nrow = ceiling(ncol(results_lwr02_coefs_spatial) / 3), sync = T) + 
+tm_layout(legend.position = c('left','bottom'), outer.margins = c(0,0,0,0), frame = F)
 ```
 ```{r fig.width = 9, fig.height = 8}
 tmap_mode('plot') # set to plotting mode
@@ -342,6 +345,40 @@ tm_shape(londonrail) +
 tm_facets(ncol = ceiling(ncol(results_lwr02_pvals_spatial@data) / 3), nrow = floor(ncol(results_lwr02_pvals_spatial) / 3), sync = T) + 
 tm_layout(main.title = 'MSOA Level Coefficient P-values', main.title.position = 'center', legend.position = c('left','bottom'))
 ```
+## Compile regression results table
+```{r}
+regressiontable <- matrix(nrow = length(ivs), ncol = 11, dimnames = list(c(ivs),c('OLS','OLS 95CI_L','OLS 95CI_U','OLS with Spillovers','OLS with Spillovers 95CI_L','OLS with Spillovers 95CI_U','LWR Min','LWR 25%','LWR 50%','LWR 75%','LWR Max')))
+for (row in rownames(regressiontable)) {  
+  lwr_quantiles <- round(summary(results_lwr02$results_coef[,row]),3)
+  regressiontable[row,'LWR Min'] <- lwr_quantiles[1]
+  regressiontable[row,'LWR 25%'] <- lwr_quantiles[2]
+  regressiontable[row,'LWR 50%'] <- lwr_quantiles[3]
+  regressiontable[row,'LWR 75%'] <- lwr_quantiles[5]
+  regressiontable[row,'LWR Max'] <- lwr_quantiles[6]
+}
+
+rownames(regressiontable)[1] <- '(Intercept)'
+for (row in rownames(regressiontable)) {
+  if (row %in% names(lm_global$coefficients)) {
+    regressiontable[row,'OLS'] <- round(lm_global$coefficients[row],3)
+    regressiontable[row,'OLS 95CI_L'] <- round(confint(lm_global)[row,1],3)
+    regressiontable[row,'OLS 95CI_U'] <- round(confint(lm_global)[row,2],3)
+  }
+  regressiontable[row,'OLS with Spillovers'] <- round(lm_global_local_spillovers$coefficients[row],3)
+  regressiontable[row,'OLS with Spillovers 95CI_L'] <- round(confint(lm_global_local_spillovers)[row,1],3)
+  regressiontable[row,'OLS with Spillovers 95CI_U'] <- round(confint(lm_global_local_spillovers)[row,2],3)
+}
+# 
+# regressiontable['1','OLS'] <- round(lm_global$coefficients[1],3)
+# regressiontable['1','OLS 95CI_L'] <- round(confint(lm_global)[1,1])
+# regressiontable['1','OLS 95CI_U'] <- round(confint(lm_global)[1,2])
+# regressiontable['1','OLS with Spillovers'] <- round(lm_global_local_spillovers$coefficients[1],3)
+# regressiontable['1','OLS with Spillovers 95CI_L'] <- round(confint(lm_global_local_spillovers)[1,1])
+# regressiontable['1','OLS with Spillovers 95CI_U'] <- round(confint(lm_global_local_spillovers)[1,2])
+
+```
+
+
 ## Visualisation of Residuals
 ### compile and join results
 ```{r}
