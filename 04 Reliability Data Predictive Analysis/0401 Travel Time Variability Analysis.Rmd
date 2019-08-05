@@ -299,15 +299,15 @@ tm_layout(legend.position = c('left','bottom'), outer.margins = c(0,0,0,0), fram
 ```{r fig.width = 9, fig.height = 8}
 tmap_mode('plot') # set to plotting mode
 tm_shape(results_lwr02_localrsqadj_spatial) + 
-  tm_fill('local_rsq', palette = 'Greens') +
+  tm_fill('Local Rsq Adj', palette = 'Greens') +
 tm_shape(londontube) + 
   tm_lines(lwd = .1, col = 'black') +
 tm_shape(londonrail) + 
   tm_lines(lwd = .1, col = 'black') +
-tm_layout(main.title = 'Adjusted Rsq for Local Regression Fit', main.title.position = 'center', legend.position = c('left','bottom'))
+tm_layout(outer.margins = c(0,0,0,0), legend.position = c('left','bottom'), frame = F)
 ```
 
-```{r fig.width = 24, fig.height = 18}
+```{r fig.width = 18, fig.height = 24}
 tmap_mode('plot') # set to plotting mode
 tm_shape(results_lwr02_pvals_spatial) + 
   tm_fill(c(colnames(results_lwr02_pvals_spatial@data)), palette = 'Blues', style = 'fixed', breaks = c(0,.01,.05,.1,1)) +
@@ -315,7 +315,7 @@ tm_shape(londontube) +
   tm_lines(lwd = .1, col = 'black') +
 tm_shape(londonrail) + 
   tm_lines(lwd = .1, col = 'black') + 
-tm_facets(ncol = ceiling(ncol(results_lwr02_pvals_spatial@data) / 3), nrow = floor(ncol(results_lwr02_pvals_spatial) / 3), sync = T) + 
+tm_facets(ncol = 3, nrow = ceiling(ncol(results_lwr02_pvals_spatial) / 3), sync = T) + 
 tm_layout(legend.position = c('left','bottom'), outer.margins = c(0,0,0,0), legend.text.size = 1.5, legend.title.size = 1.5, frame = F)
 ```
 ## Compile regression results table
