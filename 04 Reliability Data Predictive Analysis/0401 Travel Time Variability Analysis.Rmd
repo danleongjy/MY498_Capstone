@@ -175,6 +175,13 @@ for (row in 1:nrow(regressiondf)) {
 plot(unlist(regressiondf[,dv]), regressiondf$dv_local_mean, xlab = '90% HPD Interval Width', ylab = 'Local Mean of 90% HPD Interval Width')
 title(paste(c('Pearson Correlation between Interval Width and\nLocal Mean Interval Width:', round(cor(regressiondf[,dv], regressiondf$dv_local_mean), 2)), collapse = ''))
 ```
+### Examine correlation between baseline and actual median travel times
+```{r}
+plot(regressiondf$traveltime, regressiondf$median_traveltime, xlab = 'Baseline Travel Time (min)', ylab = 'Observed Median Travel Time (min)')
+lines(c(0,150),c(0,150), col = 'red')
+title(paste('Pearson Correlation: ', round(cor(regressiondf$traveltime, regressiondf$median_traveltime), 3), collapse = ''))
+```
+
 ```{r include = FALSE}
 library(rgdal)
 library(tmap)
