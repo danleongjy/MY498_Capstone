@@ -2,346 +2,6 @@
 <b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" SelectedStyle="">
 <b:Source>
 <b:Year>2009</b:Year>
-<b:Volume>29</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Social impacts of transport: literature review and the state of the practice of transport appraisal in the Netherlands and the United Kingdom</b:Title>
-<b:BIBTEX_Abstract>Transport appraisals in European countries increasingly address three dimensions of sustainability—economic, ecological and social. However, social impacts of transport have been underexposed in (ex-ante) transport project appraisal, at least in the Netherlands. Firstly, this article presents a theoretical framework describing the relationships between determinants of social impacts of transport; it also provides a definition and categorization of those impacts. Secondly, the article reviews the state of the practice of national transport project appraisal in the Netherlands and the United Kingdom. The article shows that social impacts of transport investments can take on many forms and their levels of importance may vary widely, in project appraisal. The UK transport appraisal guidance includes a spectrum of social impacts through quantitative and qualitative assessments that is broader than the Dutch appraisal guidance. However, it does not cover the full range as identified in the literature. This holds, in particular, for the temporary impacts of transport investments, health impacts, social cohesion, the distribution and accumulation of impacts across population groups and social justice. All in all, it can be concluded that there is a long way to go before social impacts of transport projects are completely included in appraisals, in a way that allows us to compare them to economic and ecological effects.</b:BIBTEX_Abstract>
-<b:Tag>Geurs2009</b:Tag>
-<b:Publisher>Informa UK Limited</b:Publisher>
-<b:BIBTEX_KeyWords>Equity, Accessibility</b:BIBTEX_KeyWords>
-<b:DOI>10.1080/01441640802130490</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Geurs</b:Last>
-<b:Middle>T.</b:Middle>
-<b:First>Karst</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Boon</b:Last>
-<b:First>Wouter</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Wee</b:Last>
-<b:Middle>Van</b:Middle>
-<b:First>Bert</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>69-90</b:Pages>
-<b:Month>1</b:Month>
-<b:JournalName>Transport Reviews</b:JournalName>
-<b:Number>1</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2018</b:Year>
-<b:Volume>78</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Incorporating job diversity preference into measuring job accessibility</b:Title>
-<b:Tag>Dai2018</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.cities.2018.02.003</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Dai</b:Last>
-<b:First>Te-qi</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Liu</b:Last>
-<b:First>Zheng-bing</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Liao</b:Last>
-<b:First>Cong</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Cai</b:Last>
-<b:First>Hong-yu</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>108-115</b:Pages>
-<b:Month>8</b:Month>
-<b:JournalName>Cities</b:JournalName>
-</b:Source>
-<b:Source>
-<b:Year>1998</b:Year>
-<b:Volume>64</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Rethinking accessibility and jobs-housing balance</b:Title>
-<b:BIBTEX_Abstract>Through estimation of a discrete choice model of residential location, this study argues that commute time remains a dominant determinant of residential location at the regional scale, and that provision of affordable housing near employment concentrations can influence residential location devisions for low-to-moderate income, single-worker households. But the significance of jobs-housing balance is not in reducing congestion; even when successful, such policies will have little impact on average travel speeds. Rather, the relaxation of suburban regulation that could lead to improved matches between home and workplace is seen as enhancing the range of households' choices about residence and transportation.</b:BIBTEX_Abstract>
-<b:Tag>Levine1998</b:Tag>
-<b:Publisher>Informa UK Limited</b:Publisher>
-<b:BIBTEX_KeyWords>Jobs, Workers, Distribution, Accessibility, Choice</b:BIBTEX_KeyWords>
-<b:DOI>10.1080/01944369808975972</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Levine</b:Last>
-<b:First>Jonathan</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>133-149</b:Pages>
-<b:Month>6</b:Month>
-<b:JournalName>Journal of the American Planning Association</b:JournalName>
-<b:Number>2</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2000</b:Year>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>The young person's guide to the Theil Index: suggesting intuitive interpretations and exploring analytical applications</b:Title>
-<b:Tag>Conceicao2000</b:Tag>
-<b:URL>https://utip.lbj.utexas.edu/papers/utip_14.pdf</b:URL>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Conceição</b:Last>
-<b:First>Pedro</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Ferreira</b:Last>
-<b:First>Pedro</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:JournalName>UTIP Working Papers</b:JournalName>
-<b:Number>14</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2018</b:Year>
-<b:Volume>95</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Dynamic cities: location-based accessibility modelling as a function of time</b:Title>
-<b:Tag>Jarv2018</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.apgeog.2018.04.009</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Järv</b:Last>
-<b:First>Olle</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Tenkanen</b:Last>
-<b:First>Henrikki</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Salonen</b:Last>
-<b:First>Maria</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Ahas</b:Last>
-<b:First>Rein</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Toivonen</b:Last>
-<b:First>Tuuli</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>101-110</b:Pages>
-<b:Month>6</b:Month>
-<b:JournalName>Applied Geography</b:JournalName>
-</b:Source>
-<b:Source>
-<b:Year>2012</b:Year>
-<b:Volume>178</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Scale in the effect of accessibility on population change: GIS and a statistical approach to road, air and rail accessibility in Finland, 1990-2008</b:Title>
-<b:BIBTEX_Abstract>The matter of scale is often ignored when analysing accessibility and its effects on population change. While accessibility has a concentrating effect on the activities of society on a regional scale, it also has a decentralising effect within urban areas in developed countries, including Finland. Population change is the outcome of numerous individual location choices. However, the scale on which these choices form a pattern related to transport accessibility is unclear, because the increasing stochasticity in an accurate resolution forces consideration of the effect of accessibility on population dynamics in the context of local characteristics. The matter of scale on modelling the relationship between transport accessibility and population change is considered in this article by comparing results using six different resolutions: namely side lengths of grid cells involving 2, 4, 8, 12, 16 and 24 kilometres. Road, air and rail accessibility were related to population change with non-linear regression, generalised additive models (GAM). Road accessibility was assessed by potentials originating from a gravity model. For revealing the effect on population change, air and rail accessibility were calculated as travel times to airports and stations. Analyses were based on exact population grid-cell data, an accurate model of road and rail networks and using geographical information systems (GIS). The study shows that population change was strongly related to potential accessibility. Airport accessibility also had high importance, whereas railway accessibility did not have any significant effect. The relevance of modelled relationships was noted to be clearly dependent on geographical scale. The models have good predictive ability at a 24 x 24-km resolution, but in resolutions more accurate than 12x12 km, much of the predictive power decreases. Our results strongly indicate that scale matters in accessibility analysis, and it should be taken into account in forthcoming population change studies.</b:BIBTEX_Abstract>
-<b:Tag>Kotavaara_2012</b:Tag>
-<b:Publisher>Wiley</b:Publisher>
-<b:DOI>10.1111/j.1475-4959.2012.00460.x</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Kotavaara</b:Last>
-<b:First>Ossi</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Antikainen</b:Last>
-<b:First>Harri</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Marmion</b:Last>
-<b:First>Mathieu</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Rusanen</b:Last>
-<b:First>Jarmo</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>366-382</b:Pages>
-<b:Month>3</b:Month>
-<b:JournalName>The Geographical Journal</b:JournalName>
-<b:Number>4</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2018</b:Year>
-<b:Volume>73</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Evaluating equity and accessibility to jobs by public transport across Canada</b:Title>
-<b:BIBTEX_Abstract>Accessibility, or the ease of reaching destinations, is increasingly being used and examined in both literature and practice. The most common accessibility metric, the cumulative opportunity measure, is often computed as the number of jobs that can be reached within a certain time frame. Aggregating all jobs, however, often inflates the opportunities that can be reached by socially vulnerable residents, which could feed into and/or generate inadequate policy decisions. This study therefore develops the measure of accessibility to low-income jobs for vulnerable residents by public transport, specifically taking into account realized travel times by these vulnerable individuals. This fine-grained measure, computed across 11 major Canadian cities, is a modified place-based accessibility metric that incorporates facets of person-based metrics, allowing planners and policy makers to propose more targeted interventions to improve the quality of life of their cities' most vulnerable populations. The study further allows for direct comparisons between the impacts of variation in accessibility levels between different regions to help create best practices in land use and transport planning.</b:BIBTEX_Abstract>
-<b:Tag>Deboosere2018</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.jtrangeo.2018.10.006</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Deboosere</b:Last>
-<b:First>Robbin</b:First>
-</b:Person>
-<b:Person>
-<b:Last>El-Geneidy</b:Last>
-<b:First>Ahmed</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>54-63</b:Pages>
-<b:Month>12</b:Month>
-<b:JournalName>Journal of Transport Geography</b:JournalName>
-</b:Source>
-<b:Source>
-<b:Year>2018</b:Year>
-<b:Volume>117</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Public transport experienced service reliability: integrating travel time and travel conditions</b:Title>
-<b:Tag>Jenelius2018</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.tra.2018.08.026</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Jenelius</b:Last>
-<b:First>Erik</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>275-291</b:Pages>
-<b:Month>11</b:Month>
-<b:JournalName>Transportation Research Part A: Policy and Practice</b:JournalName>
-</b:Source>
-<b:Source>
-<b:Year>2016</b:Year>
-<b:Volume>59</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Estimation of travel time variability for cars, buses, metro and door-to-door public transport trips in Santiago, Chile</b:Title>
-<b:Tag>Duran-Hormazabal2016</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.retrec.2016.06.002</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Durán-Hormazábal</b:Last>
-<b:First>Elsa</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Tirachini</b:Last>
-<b:First>Alejandro</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>26-39</b:Pages>
-<b:Month>11</b:Month>
-<b:JournalName>Research in Transportation Economics</b:JournalName>
-</b:Source>
-<b:Source>
-<b:Year>1976</b:Year>
-<b:Volume>6</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>An axiomatic approach to the measurement of accessibility</b:Title>
-<b:Tag>Weibull1976</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:BIBTEX_KeyWords>Accessibility</b:BIBTEX_KeyWords>
-<b:DOI>10.1016/0166-0462(76)90031-4</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Weibull</b:Last>
-<b:Middle>W.</b:Middle>
-<b:First>Jörgen</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>357-379</b:Pages>
-<b:Month>12</b:Month>
-<b:JournalName>Regional Science and Urban Economics</b:JournalName>
-<b:Number>4</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2016</b:Year>
-<b:Volume>15</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Health research needs more comprehensive accessibility measures: integrating time and transport modes from open data</b:Title>
-<b:Tag>Tenkanen_2016</b:Tag>
-<b:Publisher>Springer Nature</b:Publisher>
-<b:DOI>10.1186/s12942-016-0052-x</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Tenkanen</b:Last>
-<b:First>Henrikki</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Saarsalmi</b:Last>
-<b:First>Perttu</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Järv</b:Last>
-<b:First>Olle</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Salonen</b:Last>
-<b:First>Maria</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Toivonen</b:Last>
-<b:First>Tuuli</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Month>7</b:Month>
-<b:JournalName>International Journal of Health Geographics</b:JournalName>
-<b:Number>1</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2009</b:Year>
 <b:Volume>15</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
@@ -369,53 +29,181 @@
 <b:Number>4</b:Number>
 </b:Source>
 <b:Source>
-<b:Year>2002</b:Year>
-<b:Volume>27</b:Volume>
+<b:Year>2010</b:Year>
+<b:Volume>2</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Under the hood: issues in the specification and interpretation of spatial regression models</b:Title>
-<b:Tag>Anselin2002</b:Tag>
-<b:Publisher>Wiley</b:Publisher>
-<b:DOI>10.1111/j.1574-0862.2002.tb00120.x</b:DOI>
+<b:Title>Clustering stability: an overview</b:Title>
+<b:Tag>Luxburg</b:Tag>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Anselin</b:Last>
-<b:First>Luc</b:First>
+<b:Last>Luxburg</b:Last>
+<b:First>Ulrike</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Pages>247-267</b:Pages>
-<b:Month>11</b:Month>
-<b:JournalName>Agricultural Economics</b:JournalName>
+<b:Pages>235-274</b:Pages>
+<b:JournalName>Foundations and Trends in Machine Learning</b:JournalName>
 <b:Number>3</b:Number>
 </b:Source>
 <b:Source>
-<b:Year>2019</b:Year>
-<b:BIBTEX_Entry>electronic</b:BIBTEX_Entry>
-<b:SourceType>ElectronicSource</b:SourceType>
-<b:Title>How unpredictable is your subway commute? We'll show you</b:Title>
-<b:URL>https://www.nytimes.com/interactive/2019/07/08/upshot/nyc-subway-variability-calculator.html</b:URL>
+<b:Year>2017</b:Year>
+<b:Volume>64</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Does competition matter in measures of job accessibility? Explaining employment in Los Angeles</b:Title>
+<b:Tag>Merlin2017</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.jtrangeo.2017.08.009</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Katz</b:Last>
-<b:First>Josh</b:First>
+<b:Last>Merlin</b:Last>
+<b:Middle>A.</b:Middle>
+<b:First>Louis</b:First>
 </b:Person>
 <b:Person>
-<b:Last>Quealy</b:Last>
-<b:First>Kevin</b:First>
+<b:Last>Hu</b:Last>
+<b:First>Lingqian</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Month>7</b:Month>
-<b:City>New</b:City>
-<b:StateProvince>York</b:StateProvince>
-<b:CountryRegion>NY</b:CountryRegion>
+<b:Pages>77-88</b:Pages>
+<b:Month>10</b:Month>
+<b:JournalName>Journal of Transport Geography</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>2004</b:Year>
+<b:Volume>12</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Accessibility evaluation of land-use and transport strategies: review and research directions</b:Title>
+<b:BIBTEX_Abstract>A review of accessibility measures is presented for assessing the usability of these measures in evaluations of land-use and transport strategies and developments. Accessibility measures are reviewed using a broad range of relevant criteria, including theoretical basis, interpretability and communicability, and data requirements of the measures. Accessibility impacts of land-use and transport strategies are often evaluated using accessibility measures, which researchers and policy makers can easily operationalise and interpret, such as travelling speed, but which generally do not satisfy theoretical criteria. More complex and disaggregated accessibility measures, however, increase complexity and the effort for calculations and the difficulty of interpretation. The current practice can be much improved by operationalising more advanced location-based and utility-based accessibility measures that are still relatively easy to interpret for researchers and policy makers, and can be computed with state-of-the-practice data and/or landuse and transport models. Research directions towards theoretically more advanced accessibility measures point towards the inclusion of individual’s spatial–temporal constraints and feedback mechanisms between accessibility, land-use and travel behaviour. Furthermore, there is a need for theoretical and empirical research on relationships between accessibility, option values and non-user benefits, and the measurement of different components of accessibility.</b:BIBTEX_Abstract>
+<b:Tag>Geurs_2004</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:BIBTEX_KeyWords>Accessibility, Land Use</b:BIBTEX_KeyWords>
+<b:DOI>10.1016/j.jtrangeo.2003.10.005</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Geurs</b:Last>
+<b:Middle>T.</b:Middle>
+<b:First>Karst</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Wee</b:Last>
+<b:First>Bert</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>127-140</b:Pages>
+<b:Month>6</b:Month>
+<b:JournalName>Journal of Transport Geography</b:JournalName>
+<b:Number>2</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>1998</b:Year>
+<b:Volume>25</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Location characteristics of inner-city neighborhoods and employment accessibility of low-wage workers</b:Title>
+<b:BIBTEX_Abstract>Studies that examine spatial characteristics of urban unemployment are often based on some simplistic measures of employment accessibility. In this paper a refined methodological framework for measuring accessibility is presented, which enables the researcher (1) to improve the measurement by accounting for job competition among workers commuting by different modes, and (2) to understand the outcome more thoroughly by distinguishing the effect of location from that of workers' auto ownership. This refined framework is applied to a case study of employment accessibility of low-wage workers living in Boston's inner-city neighborhoods, with primarily 1990 Census demographic and journey-to-work data. The empirical results show clearly that, although the central location of inner-city residence still gives the low-wage workers some advantage, auto ownership is the more important determinant. Low-wage workers living in inner-city neighborhoods on average do not have high employment accessibility because a large percentage of them do not own any motor vehicle and hence have limited spatial mobility. Implications of the findings are discussed and qualified in light of the limitation of the research.</b:BIBTEX_Abstract>
+<b:Tag>Shen1998</b:Tag>
+<b:Publisher>SAGE Publications</b:Publisher>
+<b:BIBTEX_KeyWords>Employment, Accessibility, Equity, Provision Ratio</b:BIBTEX_KeyWords>
+<b:DOI>10.1068/b250345</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Shen</b:Last>
+<b:First>Q.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>345-365</b:Pages>
+<b:JournalName>Environment and Planning B: Planning and Design</b:JournalName>
+<b:Number>3</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2015</b:Year>
+<b:Volume>4</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Transport accessibility analysis using GIS: assessing sustainable transport in London</b:Title>
+<b:BIBTEX_Abstract>Transport accessibility is an important driver of urban growth and key to the sustainable development of cities. This paper presents a simple GIS-based tool developed to allow the rapid analysis of accessibility by different transport modes. Designed to be flexible and use publicly-available data, this tool (built in ArcGIS) uses generalized cost to measure transport costs across networks including monetary and distance components. The utility of the tool is demonstrated on London, UK, showing the differing patterns of accessibility across the city by different modes. It is shown that these patterns can be examined spatially, by accessibility to particular destinations (e.g., employment locations), or as a global measure across a whole city system. A number of future infrastructure scenarios are tested, examining the potential for increasing the use of low-carbon forms of transport. It is shown that private car journeys are still the least cost mode choice in London, but that infrastructure investments can play a part in reducing the cost of more sustainable transport options.</b:BIBTEX_Abstract>
+<b:Tag>Ford2015</b:Tag>
+<b:Publisher>MDPI AG</b:Publisher>
+<b:BIBTEX_KeyWords>Network, accessibility, generalised cost, GLA</b:BIBTEX_KeyWords>
+<b:DOI>10.3390/ijgi4010124</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Ford</b:Last>
+<b:First>Alistair</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Barr</b:Last>
+<b:First>Stuart</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Dawson</b:Last>
+<b:First>Richard</b:First>
+</b:Person>
+<b:Person>
+<b:Last>James</b:Last>
+<b:First>Philip</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>124-149</b:Pages>
+<b:Month>1</b:Month>
+<b:JournalName>ISPRS International Journal of Geo-Information</b:JournalName>
+<b:Number>1</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2015</b:Year>
+<b:Volume>43</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>A method to evaluate equitable accessibility: combining ethical theories and accessibility-based approaches</b:Title>
+<b:BIBTEX_Abstract>In this paper, we present the case that traditional transport appraisal methods do not sufficiently capture the social dimensions of mobility and accessibility. However, understanding this is highly relevant for policymakers to understand the impacts of their transport decisions. These dimensions include the distribution of mobility and accessibility levels over particular areas or for specific population groups, as well as how this may affect various social outcomes, including their levels of participation, social inclusion and community cohesion. In response, we propose a method to assess the socially relevant accessibility impacts (SRAIs) of policies in some of these key dimensions. The method combines the use of underlying ethics principles, more specifically the theories of egalitarianism and sufficientarianism, in combination with accessibility-based analysis and the Lorenz curve and Gini index. We then demonstrate the method in a case study example. Our suggestion is that policymakers can use these ethical perspectives to determine the equity of their policies decisions and to set minimum standards for local transport delivery. This will help them to become more confident in the development and adoption of new decision frameworks that promote accessibility over mobility and which also disaggregate the costs and benefits of transport policies over particular areas or for specific under-served population groups.</b:BIBTEX_Abstract>
+<b:Tag>Lucas2015</b:Tag>
+<b:Publisher>Springer Nature</b:Publisher>
+<b:BIBTEX_KeyWords>Equity, accessibility, ethics, Lorenz curve, Gini index</b:BIBTEX_KeyWords>
+<b:DOI>10.1007/s11116-015-9585-2</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Lucas</b:Last>
+<b:First>Karen</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Wee</b:Last>
+<b:First>Bert</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Maat</b:Last>
+<b:First>Kees</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>473-490</b:Pages>
+<b:Month>3</b:Month>
+<b:JournalName>Transportation</b:JournalName>
+<b:Number>3</b:Number>
 </b:Source>
 <b:Source>
 <b:Year>2016</b:Year>
@@ -462,75 +250,481 @@
 <b:JournalName>Transportation Research Part A: Policy and Practice</b:JournalName>
 </b:Source>
 <b:Source>
-<b:Year>2011</b:Year>
-<b:Volume>14</b:Volume>
+<b:Year>2018</b:Year>
+<b:Volume>20</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Industrial agglomeration and transport accessibility in metropolitan Seoul</b:Title>
-<b:BIBTEX_Abstract>This study aims to reveal the relationship between industrial agglomeration and transport accessibility in the Seoul metropolitan area. Our study suggests that in spite of the rapid expansion of the Seoul metropolitan area, central business districts still function as centers of the industry and transportation system; the agglomeration of most industrial subsectors are occurring in central areas and only primary and manufacturing sectors’ clusters are located out of these areas; both of subway and road networks show higher level of accessibility in central Seoul and big cities. This implies a strong relationship between the industrial agglomeration and the transport accessibility, and such hypothetical relationship is tested for every industrial subsector using logit analysis. Our findings indicate that although there are industrial variations in the magnitude of impacts and the significance level, transport networks are, in general, positively associated with industrial agglomeration and this is especially true for service sectors.</b:BIBTEX_Abstract>
-<b:Tag>Song2011</b:Tag>
-<b:Publisher>Springer Nature</b:Publisher>
-<b:BIBTEX_KeyWords>Agglomeration, transport, industry</b:BIBTEX_KeyWords>
-<b:DOI>10.1007/s10109-011-0150-z</b:DOI>
+<b:Title>Adjusting for unmeasured spatial confounding with distance adjusted propensity score matching</b:Title>
+<b:Tag>Papadogeorgou2018</b:Tag>
+<b:Publisher>Oxford University Press (OUP)</b:Publisher>
+<b:DOI>10.1093/biostatistics/kxx074</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Song</b:Last>
-<b:First>Yena</b:First>
+<b:Last>Papadogeorgou</b:Last>
+<b:First>Georgia</b:First>
 </b:Person>
 <b:Person>
-<b:Last>Lee</b:Last>
-<b:First>Keumsook</b:First>
+<b:Last>Choirat</b:Last>
+<b:First>Christine</b:First>
 </b:Person>
 <b:Person>
-<b:Last>Anderson</b:Last>
-<b:Middle>P.</b:Middle>
-<b:First>William</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Lakshmanan</b:Last>
-<b:Middle>R.</b:Middle>
-<b:First>T.</b:First>
+<b:Last>Zigler</b:Last>
+<b:Middle>M.</b:Middle>
+<b:First>Corwin</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Pages>299-318</b:Pages>
+<b:Pages>256-272</b:Pages>
+<b:Month>1</b:Month>
+<b:JournalName>Biostatistics</b:JournalName>
+<b:Number>2</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2018</b:Year>
+<b:Volume>3</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Governing urban accessibility: moving beyond transport and mobility</b:Title>
+<b:BIBTEX_Abstract>Access to people, goods, ideas and services is the basis of economic development in cities. The better this access, the greater the economic benefits through economies of scale, agglomeration effects and networking advantages. The way in which cities facilitate accessibility also impacts directly on other key aspects of human development, social inclusion and well-being. Accessibility is created through a complex interplay of urban form and transport systems. Thus, governing urban accessibility requires moving beyond conventional urban transport considerations linked to mobility and movement. Such a re-framing implies a far greater recognition of urban form characteristics like land use, distribution of densities and urban design, in addition to transport characteristics like infrastructures, service levels and travel speeds. A new interface between these characteristics has emerged as a result of shared mobility systems, putting additional pressure on city governments to act as system integrators. Based on a literature review, empirical insights from a global survey and the case-study cities of London, NYC and Berlin, this paper explores the institutional capacities of shifting from governing urban transport to urban accessibility. The evidence shows that there are entrenched misalignments which may impact negatively on the capacity to pair planning and policies essential for delivering better accessibility. Furthermore, it is clear that “hierarchies” and “networks” are not mutually exclusive when it comes to integrated governance of accessibility. The findings also suggest that cities may be better equipped to integrate shared mobility and consider mobility as a service than to pursue more wide-ranging metropolitan accessibility policies.</b:BIBTEX_Abstract>
+<b:Tag>Rode_2018</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:DOI>10.1080/23800127.2018.1438149</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Rode</b:Last>
+<b:First>Philipp</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Cruz</b:Last>
+<b:Middle>F.</b:Middle>
+<b:First>Nuno</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>8-33</b:Pages>
+<b:Month>1</b:Month>
+<b:JournalName>Applied Mobilities</b:JournalName>
+<b:Number>1</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2018</b:Year>
+<b:Volume>78</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Incorporating job diversity preference into measuring job accessibility</b:Title>
+<b:Tag>Dai2018</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.cities.2018.02.003</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Dai</b:Last>
+<b:First>Te-qi</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Liu</b:Last>
+<b:First>Zheng-bing</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Liao</b:Last>
+<b:First>Cong</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Cai</b:Last>
+<b:First>Hong-yu</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>108-115</b:Pages>
+<b:Month>8</b:Month>
+<b:JournalName>Cities</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>2018</b:Year>
+<b:Volume>95</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Dynamic cities: location-based accessibility modelling as a function of time</b:Title>
+<b:Tag>Jarv2018</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.apgeog.2018.04.009</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Järv</b:Last>
+<b:First>Olle</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Tenkanen</b:Last>
+<b:First>Henrikki</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Salonen</b:Last>
+<b:First>Maria</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Ahas</b:Last>
+<b:First>Rein</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Toivonen</b:Last>
+<b:First>Tuuli</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>101-110</b:Pages>
+<b:Month>6</b:Month>
+<b:JournalName>Applied Geography</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>1976</b:Year>
+<b:Volume>6</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>An axiomatic approach to the measurement of accessibility</b:Title>
+<b:Tag>Weibull1976</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:BIBTEX_KeyWords>Accessibility</b:BIBTEX_KeyWords>
+<b:DOI>10.1016/0166-0462(76)90031-4</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Weibull</b:Last>
+<b:Middle>W.</b:Middle>
+<b:First>Jörgen</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>357-379</b:Pages>
+<b:Month>12</b:Month>
+<b:JournalName>Regional Science and Urban Economics</b:JournalName>
+<b:Number>4</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2018</b:Year>
+<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
+<b:SourceType>Book</b:SourceType>
+<b:Title>Mayor's transport strategy: March 2018</b:Title>
+<b:Tag>GLA2018</b:Tag>
+<b:Publisher>Greater London Authority</b:Publisher>
+<b:URL>https://www.london.gov.uk/sites/default/files/mayors-transport-strategy-2018.pdf</b:URL>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Authority</b:Last>
+<b:Middle>London</b:Middle>
+<b:First>Greater</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+</b:Source>
+<b:Source>
+<b:Year>1959</b:Year>
+<b:Volume>25</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>How accessibility shapes land use</b:Title>
+<b:Tag>Hansen1959</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:BIBTEX_KeyWords>Accessibility, Land Use</b:BIBTEX_KeyWords>
+<b:DOI>10.1080/01944365908978307</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Hansen</b:Last>
+<b:Middle>G.</b:Middle>
+<b:First>Walter</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>73-76</b:Pages>
 <b:Month>5</b:Month>
-<b:JournalName>Journal of Geographical Systems</b:JournalName>
+<b:JournalName>Journal of the American Institute of Planners</b:JournalName>
+<b:Number>2</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2003</b:Year>
+<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
+<b:SourceType>Book</b:SourceType>
+<b:Title>Making the connections: final report on transport and social exclusion</b:Title>
+<b:Tag>SEU2003</b:Tag>
+<b:Publisher>Office of the Deputy Prime Minister</b:Publisher>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Unit</b:Last>
+<b:Middle>Exclusion</b:Middle>
+<b:First>Social</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+</b:Source>
+<b:Source>
+<b:Year>2017</b:Year>
+<b:Volume>58</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Assessing equity in transport accessibility to work and study: the Bogotá region</b:Title>
+<b:BIBTEX_Abstract>This researchwas aimed at exploring levels of equity in accessibility to employment and education in the city-region of Bogotá, Colombia's capital city. Building on consolidated methodologies for the assessment of potential accessibility, we estimate accessibility indicators at the zone level, evaluate how potential accessibility varies among income groups, and present evidence related to transport mode, in order to analyze social and spatial inequalities produced by the distribution of accessibility to employment and education activities. The research incorporates a method to evaluate how accessibility varies among zones according to average income and mode of transport in order to produce evidence-based arguments that can inform transport policy in the city-region of Bogotá, and other similar contexts in the Global South. Our results show strong distributional effects of the socio-spatial and economic structure of the city-region, its transport infrastructure and services, and the effect of current transport and land-use policies for citizens of different income groups. The tools and empirical evidence in this research seek to contribute to informed policy development in Latin America and other developing contexts, and feeding current debates on the role of accessibility in addressing social and spatial inequalities stemming from urban mobility</b:BIBTEX_Abstract>
+<b:Tag>Guzman2017</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.jtrangeo.2016.12.016</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Guzman</b:Last>
+<b:Middle>A.</b:Middle>
+<b:First>Luis</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Oviedo</b:Last>
+<b:First>Daniel</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Rivera</b:Last>
+<b:First>Carlos</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>236-246</b:Pages>
+<b:Month>1</b:Month>
+<b:JournalName>Journal of Transport Geography</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>2019</b:Year>
+<b:Volume>33</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>A comparative analysis of accessibility measures by the two-step floating catchment area (2SFCA) method</b:Title>
+<b:Tag>Chen2019</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:DOI>10.1080/13658816.2019.1591415</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Chen</b:Last>
+<b:First>Xiang</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Jia</b:Last>
+<b:First>Pengfei</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>1739-1758</b:Pages>
+<b:Month>3</b:Month>
+<b:JournalName>International Journal of Geographical Information Science</b:JournalName>
+<b:Number>9</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2012</b:Year>
+<b:Volume>20</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Transport and social exclusion: where are we now?</b:Title>
+<b:BIBTEX_Abstract>The late 1990s and early 2000s witnessed a growing interest amongst UK academics and policy makers in the issue of transport disadvantage and, more innovatively, how this might relate to growing concerns about the social exclusion of low income groups and communities. Studies (predominantly in the United Kingdom) began to make more explicit the links policy between poverty, transport disadvantage, access to key services and economic and social exclusion (see for example Church and Frost, 2000; TRaC, 2000; Lucas et al., 2001; Kenyon 2003; Kenyon et al., 2003; Hodgson and Turner, 2003; Raje, 2003).By 2003, the UK Social Exclusion Unit had published and its now internationally recognised report on this subject, which subsequently resulted in the development of a set of transport policy guidances to local authorities in England to deliver what is now commonly referred to as accessibility planning as part of their Local Transport Plans (Department for Transport, 2006). Since this time, researchers, policy makers and practitioners in several other countries became interested in adopting a social exclusion approach to transport planning, largely because of its utility in identifying the role of transport, land use planning and service delivery decisions in creating and reinforcing poverty and social disadvantage.Eight years on from the SEU report, we can begin to reflect on the extent to which a social exclusion approach to the research of transport disadvantage has been successful in opening up new avenues of research enquiry and/or identifying new theoretical perspectives and/or methodological approaches. The paper begins by briefly revisiting the basic theories and core definitions which underpin and inform a social exclusion perspective. It then considers how these have been translated and understood in terms of transport. Secondly, it considers some of the emergent empirical research of transport-related exclusion that has attempted to measure and model the interactions between transport and mobility inequalities and relational negative social outcomes. Thirdly, it offers observations on progress in some key areas of policy and practice, with specific reference to the UK and Australia. It concludes by suggesting how further progress might be made on this issue and considers whether the social exclusion agenda is still a relevant approach for achieving this.</b:BIBTEX_Abstract>
+<b:Tag>Lucas2012</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:BIBTEX_KeyWords>Transport, equity, social exclusion, personal, time poverty, relative, hypermobility</b:BIBTEX_KeyWords>
+<b:DOI>10.1016/j.tranpol.2012.01.013</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Lucas</b:Last>
+<b:First>Karen</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>105-113</b:Pages>
+<b:Month>3</b:Month>
+<b:JournalName>Transport Policy</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>1999</b:Year>
+<b:Volume>65</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The connection between public transit and employment: the cases of Portland and Atlanta</b:Title>
+<b:BIBTEX_Abstract>Much attention is being paid to the role of public transit in employment-related mobility for urban residents, yet there is very little evidence of the degree to which one affects the other. Little research has focused on how labor participation is affected by increases in urban workers' access to public transportation. Research on the spatial mismatch hypothesis has dealt with the relationship between labor participation and the spatial separation of workers' residences from suitable jobs; however, most analyses concentrate on commuting time or distance as a function of auto use. Few studies have considered the impacts of public transportation on labor participation. A study analyzing the locations and employment characteristics of workers with varying levels of access to public transit is described. Using census data and a variety of spatial measures generated by by a geographic information system, a 2-stage least squares regression was used to estimate the relationship of access to public transit with labor participation levels for Portland, Oregon, and Atlanta, Georgia. The results suggest that access to public transit is a significant factor in determining average rates of labor participation in these 2 cities.</b:BIBTEX_Abstract>
+<b:Tag>sanchez1999</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:BIBTEX_KeyWords>Accessibility, transit, low-income workers, employment</b:BIBTEX_KeyWords>
+<b:DOI>10.1080/01944369908976058</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Sanchez</b:Last>
+<b:Middle>W.</b:Middle>
+<b:First>Thomas</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>284-296</b:Pages>
+<b:Month>9</b:Month>
+<b:JournalName>Journal of the American Planning Association</b:JournalName>
 <b:Number>3</b:Number>
 </b:Source>
 <b:Source>
-<b:Year>2004</b:Year>
-<b:Volume>12</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Accessibility evaluation of land-use and transport strategies: review and research directions</b:Title>
-<b:BIBTEX_Abstract>A review of accessibility measures is presented for assessing the usability of these measures in evaluations of land-use and transport strategies and developments. Accessibility measures are reviewed using a broad range of relevant criteria, including theoretical basis, interpretability and communicability, and data requirements of the measures. Accessibility impacts of land-use and transport strategies are often evaluated using accessibility measures, which researchers and policy makers can easily operationalise and interpret, such as travelling speed, but which generally do not satisfy theoretical criteria. More complex and disaggregated accessibility measures, however, increase complexity and the effort for calculations and the difficulty of interpretation. The current practice can be much improved by operationalising more advanced location-based and utility-based accessibility measures that are still relatively easy to interpret for researchers and policy makers, and can be computed with state-of-the-practice data and/or landuse and transport models. Research directions towards theoretically more advanced accessibility measures point towards the inclusion of individual’s spatial–temporal constraints and feedback mechanisms between accessibility, land-use and travel behaviour. Furthermore, there is a need for theoretical and empirical research on relationships between accessibility, option values and non-user benefits, and the measurement of different components of accessibility.</b:BIBTEX_Abstract>
-<b:Tag>Geurs_2004</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:BIBTEX_KeyWords>Accessibility, Land Use</b:BIBTEX_KeyWords>
-<b:DOI>10.1016/j.jtrangeo.2003.10.005</b:DOI>
+<b:Year>2018</b:Year>
+<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
+<b:SourceType>Book</b:SourceType>
+<b:Title>Travel in London: report 11</b:Title>
+<b:Tag>TfL2018</b:Tag>
+<b:Publisher>Transport for London</b:Publisher>
+<b:URL>http://content.tfl.gov.uk/travel-in-london-report-11.pdf</b:URL>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Geurs</b:Last>
-<b:Middle>T.</b:Middle>
-<b:First>Karst</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Wee</b:Last>
-<b:First>Bert</b:First>
+<b:Last>London</b:Last>
+<b:First>Transport</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Pages>127-140</b:Pages>
-<b:Month>6</b:Month>
-<b:JournalName>Journal of Transport Geography</b:JournalName>
-<b:Number>2</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2019</b:Year>
+<b:BIBTEX_Entry>electronic</b:BIBTEX_Entry>
+<b:SourceType>ElectronicSource</b:SourceType>
+<b:Title>Transport for London unified API</b:Title>
+<b:Tag>TfL2019a</b:Tag>
+<b:URL>https://api.tfl.gov.uk</b:URL>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>London</b:Last>
+<b:First>Transport</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+</b:Source>
+<b:Source>
+<b:Year>2015</b:Year>
+<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
+<b:SourceType>Book</b:SourceType>
+<b:Title>The English indices of deprivation 2015: research report</b:Title>
+<b:Publisher>Department for Housing, Communities and Local Government</b:Publisher>
+<b:Author/>
+<b:City>United Kingdom</b:City>
+</b:Source>
+<b:Source>
+<b:Year>2016</b:Year>
+<b:Volume>15</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Health research needs more comprehensive accessibility measures: integrating time and transport modes from open data</b:Title>
+<b:Tag>Tenkanen_2016</b:Tag>
+<b:Publisher>Springer Nature</b:Publisher>
+<b:DOI>10.1186/s12942-016-0052-x</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Tenkanen</b:Last>
+<b:First>Henrikki</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Saarsalmi</b:Last>
+<b:First>Perttu</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Järv</b:Last>
+<b:First>Olle</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Salonen</b:Last>
+<b:First>Maria</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Toivonen</b:Last>
+<b:First>Tuuli</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Month>7</b:Month>
+<b:JournalName>International Journal of Health Geographics</b:JournalName>
+<b:Number>1</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2016</b:Year>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Accessibility and equity: an approach for wider transport project assessment in Chile</b:Title>
+<b:BIBTEX_Abstract>There is increasing consent about the importance of incorporating wider impacts to analyse transport projects and plans. Recent research reports the need to assess equity impacts of urban projects to better allocate resources. This has an even larger meaning in Latin America, because of great inequalities present. Additionally, literature about accessibility highlights the readiness of their indicators on assessing equitable access to opportunities Hence, this work explores ways to measure access inequality aimed towards better methodologies for transport project assessment. Chile represents an opportunity to develop this approach. Different accessibility measures for modelled future scenarios are analysed in the context of Santiago. The method builds from a simple accessibility formulation based on travel times forecasted by a four-step transport model. Using two subway projects as case study, methodological implications for assessment are then discussed. As a result, an index is proposed to incorporate equitable accessibility impacts parallel to CBA, which demands to further consolidate multi-criteria analysis. In the future it may also be possible to explore a value for accessibility to allow a different type of cost-benefit analysis. Conclusion remarks operational and concept issues that need to be addressed to further build a useful accessibility and equity indicators.</b:BIBTEX_Abstract>
+<b:Tag>Niehaus2016</b:Tag>
+<b:DOI>10.1016/j.retrec.2016.05.003</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Neihaus</b:Last>
+<b:First>Markus</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Galilea</b:Last>
+<b:First>Patricia</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Hurtubia</b:Last>
+<b:First>Ricardo</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>Research in Transportation Economics</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>2018</b:Year>
+<b:Volume>117</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Public transport experienced service reliability: integrating travel time and travel conditions</b:Title>
+<b:Tag>Jenelius2018</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.tra.2018.08.026</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Jenelius</b:Last>
+<b:First>Erik</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>275-291</b:Pages>
+<b:Month>11</b:Month>
+<b:JournalName>Transportation Research Part A: Policy and Practice</b:JournalName>
 </b:Source>
 <b:Source>
 <b:Year>2010</b:Year>
@@ -573,61 +767,84 @@
 </b:Source>
 <b:Source>
 <b:Year>2018</b:Year>
-<b:Volume>20</b:Volume>
+<b:Volume>73</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Adjusting for unmeasured spatial confounding with distance adjusted propensity score matching</b:Title>
-<b:Tag>Papadogeorgou2018</b:Tag>
-<b:Publisher>Oxford University Press (OUP)</b:Publisher>
-<b:DOI>10.1093/biostatistics/kxx074</b:DOI>
+<b:Title>Evaluating equity and accessibility to jobs by public transport across Canada</b:Title>
+<b:BIBTEX_Abstract>Accessibility, or the ease of reaching destinations, is increasingly being used and examined in both literature and practice. The most common accessibility metric, the cumulative opportunity measure, is often computed as the number of jobs that can be reached within a certain time frame. Aggregating all jobs, however, often inflates the opportunities that can be reached by socially vulnerable residents, which could feed into and/or generate inadequate policy decisions. This study therefore develops the measure of accessibility to low-income jobs for vulnerable residents by public transport, specifically taking into account realized travel times by these vulnerable individuals. This fine-grained measure, computed across 11 major Canadian cities, is a modified place-based accessibility metric that incorporates facets of person-based metrics, allowing planners and policy makers to propose more targeted interventions to improve the quality of life of their cities' most vulnerable populations. The study further allows for direct comparisons between the impacts of variation in accessibility levels between different regions to help create best practices in land use and transport planning.</b:BIBTEX_Abstract>
+<b:Tag>Deboosere2018</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.jtrangeo.2018.10.006</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Papadogeorgou</b:Last>
-<b:First>Georgia</b:First>
+<b:Last>Deboosere</b:Last>
+<b:First>Robbin</b:First>
 </b:Person>
 <b:Person>
-<b:Last>Choirat</b:Last>
-<b:First>Christine</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Zigler</b:Last>
-<b:Middle>M.</b:Middle>
-<b:First>Corwin</b:First>
+<b:Last>El-Geneidy</b:Last>
+<b:First>Ahmed</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Pages>256-272</b:Pages>
-<b:Month>1</b:Month>
-<b:JournalName>Biostatistics</b:JournalName>
-<b:Number>2</b:Number>
+<b:Pages>54-63</b:Pages>
+<b:Month>12</b:Month>
+<b:JournalName>Journal of Transport Geography</b:JournalName>
 </b:Source>
 <b:Source>
-<b:Year>1998</b:Year>
-<b:Volume>25</b:Volume>
+<b:Year>2010</b:Year>
+<b:Volume>467</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Location characteristics of inner-city neighborhoods and employment accessibility of low-wage workers</b:Title>
-<b:BIBTEX_Abstract>Studies that examine spatial characteristics of urban unemployment are often based on some simplistic measures of employment accessibility. In this paper a refined methodological framework for measuring accessibility is presented, which enables the researcher (1) to improve the measurement by accounting for job competition among workers commuting by different modes, and (2) to understand the outcome more thoroughly by distinguishing the effect of location from that of workers' auto ownership. This refined framework is applied to a case study of employment accessibility of low-wage workers living in Boston's inner-city neighborhoods, with primarily 1990 Census demographic and journey-to-work data. The empirical results show clearly that, although the central location of inner-city residence still gives the low-wage workers some advantage, auto ownership is the more important determinant. Low-wage workers living in inner-city neighborhoods on average do not have high employment accessibility because a large percentage of them do not own any motor vehicle and hence have limited spatial mobility. Implications of the findings are discussed and qualified in light of the limitation of the research.</b:BIBTEX_Abstract>
-<b:Tag>Shen1998</b:Tag>
-<b:Publisher>SAGE Publications</b:Publisher>
-<b:BIBTEX_KeyWords>Employment, Accessibility, Equity, Provision Ratio</b:BIBTEX_KeyWords>
-<b:DOI>10.1068/b250345</b:DOI>
+<b:Title>A unified theory of urban living</b:Title>
+<b:Tag>Bettencourt2010</b:Tag>
+<b:Publisher>Springer Nature</b:Publisher>
+<b:BIBTEX_KeyWords>Complexity, scale, urban, connectivity</b:BIBTEX_KeyWords>
+<b:DOI>10.1038/467912a</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Shen</b:Last>
-<b:First>Q.</b:First>
+<b:Last>Bettencourt</b:Last>
+<b:First>Luis</b:First>
+</b:Person>
+<b:Person>
+<b:Last>West</b:Last>
+<b:First>Geoffrey</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Pages>345-365</b:Pages>
-<b:JournalName>Environment and Planning B: Planning and Design</b:JournalName>
-<b:Number>3</b:Number>
+<b:Pages>912-913</b:Pages>
+<b:Month>10</b:Month>
+<b:JournalName>Nature</b:JournalName>
+<b:Number>7318</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2012</b:Year>
+<b:Volume>102</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Measurement, optimization, and impact of health care accessibility: a methodological review</b:Title>
+<b:Tag>Wang_2012</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:DOI>10.1080/00045608.2012.657146</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Wang</b:Last>
+<b:First>Fahui</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>1104-1112</b:Pages>
+<b:Month>9</b:Month>
+<b:JournalName>Annals of the Association of American Geographers</b:JournalName>
+<b:Number>5</b:Number>
 </b:Source>
 <b:Source>
 <b:Year>2003</b:Year>
@@ -658,6 +875,33 @@
 <b:Number>6</b:Number>
 </b:Source>
 <b:Source>
+<b:Year>2013</b:Year>
+<b:Volume>30</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Measuring urban job accessibility with distance decay, competition and diversity</b:Title>
+<b:Tag>Cheng2013</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.jtrangeo.2013.03.005</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Cheng</b:Last>
+<b:First>Jianquan</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Bertolini</b:Last>
+<b:First>Luca</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>100-109</b:Pages>
+<b:Month>6</b:Month>
+<b:JournalName>Journal of Transport Geography</b:JournalName>
+</b:Source>
+<b:Source>
 <b:Year>2019</b:Year>
 <b:BIBTEX_Entry>electronic</b:BIBTEX_Entry>
 <b:SourceType>ElectronicSource</b:SourceType>
@@ -675,43 +919,6 @@
 </b:NameList>
 </b:Author>
 </b:Author>
-</b:Source>
-<b:Source>
-<b:Year>2019</b:Year>
-<b:Volume>33</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>A comparative analysis of accessibility measures by the two-step floating catchment area (2SFCA) method</b:Title>
-<b:Tag>Chen2019</b:Tag>
-<b:Publisher>Informa UK Limited</b:Publisher>
-<b:DOI>10.1080/13658816.2019.1591415</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Chen</b:Last>
-<b:First>Xiang</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Jia</b:Last>
-<b:First>Pengfei</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>1739-1758</b:Pages>
-<b:Month>3</b:Month>
-<b:JournalName>International Journal of Geographical Information Science</b:JournalName>
-<b:Number>9</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2015</b:Year>
-<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
-<b:SourceType>Book</b:SourceType>
-<b:Title>The English indices of deprivation 2015: research report</b:Title>
-<b:Publisher>Department for Housing, Communities and Local Government</b:Publisher>
-<b:Author/>
-<b:City>United Kingdom</b:City>
 </b:Source>
 <b:Source>
 <b:Year>2018</b:Year>
@@ -760,30 +967,29 @@
 </b:Source>
 <b:Source>
 <b:Year>2016</b:Year>
+<b:Volume>59</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Accessibility and equity: an approach for wider transport project assessment in Chile</b:Title>
-<b:BIBTEX_Abstract>There is increasing consent about the importance of incorporating wider impacts to analyse transport projects and plans. Recent research reports the need to assess equity impacts of urban projects to better allocate resources. This has an even larger meaning in Latin America, because of great inequalities present. Additionally, literature about accessibility highlights the readiness of their indicators on assessing equitable access to opportunities Hence, this work explores ways to measure access inequality aimed towards better methodologies for transport project assessment. Chile represents an opportunity to develop this approach. Different accessibility measures for modelled future scenarios are analysed in the context of Santiago. The method builds from a simple accessibility formulation based on travel times forecasted by a four-step transport model. Using two subway projects as case study, methodological implications for assessment are then discussed. As a result, an index is proposed to incorporate equitable accessibility impacts parallel to CBA, which demands to further consolidate multi-criteria analysis. In the future it may also be possible to explore a value for accessibility to allow a different type of cost-benefit analysis. Conclusion remarks operational and concept issues that need to be addressed to further build a useful accessibility and equity indicators.</b:BIBTEX_Abstract>
-<b:Tag>Niehaus2016</b:Tag>
-<b:DOI>10.1016/j.retrec.2016.05.003</b:DOI>
+<b:Title>Estimation of travel time variability for cars, buses, metro and door-to-door public transport trips in Santiago, Chile</b:Title>
+<b:Tag>Duran-Hormazabal2016</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.retrec.2016.06.002</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Neihaus</b:Last>
-<b:First>Markus</b:First>
+<b:Last>Durán-Hormazábal</b:Last>
+<b:First>Elsa</b:First>
 </b:Person>
 <b:Person>
-<b:Last>Galilea</b:Last>
-<b:First>Patricia</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Hurtubia</b:Last>
-<b:First>Ricardo</b:First>
+<b:Last>Tirachini</b:Last>
+<b:First>Alejandro</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
+<b:Pages>26-39</b:Pages>
+<b:Month>11</b:Month>
 <b:JournalName>Research in Transportation Economics</b:JournalName>
 </b:Source>
 <b:Source>
@@ -816,152 +1022,218 @@
 <b:JournalName>Transport Policy</b:JournalName>
 </b:Source>
 <b:Source>
-<b:Year>1959</b:Year>
-<b:Volume>25</b:Volume>
+<b:Year>2002</b:Year>
+<b:Volume>27</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
-<b:Title>How accessibility shapes land use</b:Title>
-<b:Tag>Hansen1959</b:Tag>
-<b:Publisher>Informa UK Limited</b:Publisher>
-<b:BIBTEX_KeyWords>Accessibility, Land Use</b:BIBTEX_KeyWords>
-<b:DOI>10.1080/01944365908978307</b:DOI>
+<b:Title>Under the hood: issues in the specification and interpretation of spatial regression models</b:Title>
+<b:Tag>Anselin2002</b:Tag>
+<b:Publisher>Wiley</b:Publisher>
+<b:DOI>10.1111/j.1574-0862.2002.tb00120.x</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Hansen</b:Last>
-<b:Middle>G.</b:Middle>
-<b:First>Walter</b:First>
+<b:Last>Anselin</b:Last>
+<b:First>Luc</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Pages>73-76</b:Pages>
-<b:Month>5</b:Month>
-<b:JournalName>Journal of the American Institute of Planners</b:JournalName>
-<b:Number>2</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2010</b:Year>
-<b:Volume>467</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>A unified theory of urban living</b:Title>
-<b:Tag>Bettencourt2010</b:Tag>
-<b:Publisher>Springer Nature</b:Publisher>
-<b:BIBTEX_KeyWords>Complexity, scale, urban, connectivity</b:BIBTEX_KeyWords>
-<b:DOI>10.1038/467912a</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Bettencourt</b:Last>
-<b:First>Luis</b:First>
-</b:Person>
-<b:Person>
-<b:Last>West</b:Last>
-<b:First>Geoffrey</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>912-913</b:Pages>
-<b:Month>10</b:Month>
-<b:JournalName>Nature</b:JournalName>
-<b:Number>7318</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>1999</b:Year>
-<b:Volume>65</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>The connection between public transit and employment: the cases of Portland and Atlanta</b:Title>
-<b:BIBTEX_Abstract>Much attention is being paid to the role of public transit in employment-related mobility for urban residents, yet there is very little evidence of the degree to which one affects the other. Little research has focused on how labor participation is affected by increases in urban workers' access to public transportation. Research on the spatial mismatch hypothesis has dealt with the relationship between labor participation and the spatial separation of workers' residences from suitable jobs; however, most analyses concentrate on commuting time or distance as a function of auto use. Few studies have considered the impacts of public transportation on labor participation. A study analyzing the locations and employment characteristics of workers with varying levels of access to public transit is described. Using census data and a variety of spatial measures generated by by a geographic information system, a 2-stage least squares regression was used to estimate the relationship of access to public transit with labor participation levels for Portland, Oregon, and Atlanta, Georgia. The results suggest that access to public transit is a significant factor in determining average rates of labor participation in these 2 cities.</b:BIBTEX_Abstract>
-<b:Tag>sanchez1999</b:Tag>
-<b:Publisher>Informa UK Limited</b:Publisher>
-<b:BIBTEX_KeyWords>Accessibility, transit, low-income workers, employment</b:BIBTEX_KeyWords>
-<b:DOI>10.1080/01944369908976058</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Sanchez</b:Last>
-<b:Middle>W.</b:Middle>
-<b:First>Thomas</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>284-296</b:Pages>
-<b:Month>9</b:Month>
-<b:JournalName>Journal of the American Planning Association</b:JournalName>
+<b:Pages>247-267</b:Pages>
+<b:Month>11</b:Month>
+<b:JournalName>Agricultural Economics</b:JournalName>
 <b:Number>3</b:Number>
 </b:Source>
 <b:Source>
-<b:Year>2017</b:Year>
+<b:Year>1998</b:Year>
 <b:Volume>64</b:Volume>
 <b:BIBTEX_Entry>article</b:BIBTEX_Entry>
 <b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Does competition matter in measures of job accessibility? Explaining employment in Los Angeles</b:Title>
-<b:Tag>Merlin2017</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.jtrangeo.2017.08.009</b:DOI>
+<b:Title>Rethinking accessibility and jobs-housing balance</b:Title>
+<b:BIBTEX_Abstract>Through estimation of a discrete choice model of residential location, this study argues that commute time remains a dominant determinant of residential location at the regional scale, and that provision of affordable housing near employment concentrations can influence residential location devisions for low-to-moderate income, single-worker households. But the significance of jobs-housing balance is not in reducing congestion; even when successful, such policies will have little impact on average travel speeds. Rather, the relaxation of suburban regulation that could lead to improved matches between home and workplace is seen as enhancing the range of households' choices about residence and transportation.</b:BIBTEX_Abstract>
+<b:Tag>Levine1998</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:BIBTEX_KeyWords>Jobs, Workers, Distribution, Accessibility, Choice</b:BIBTEX_KeyWords>
+<b:DOI>10.1080/01944369808975972</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Merlin</b:Last>
-<b:Middle>A.</b:Middle>
-<b:First>Louis</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Hu</b:Last>
-<b:First>Lingqian</b:First>
+<b:Last>Levine</b:Last>
+<b:First>Jonathan</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-<b:Pages>77-88</b:Pages>
-<b:Month>10</b:Month>
+<b:Pages>133-149</b:Pages>
+<b:Month>6</b:Month>
+<b:JournalName>Journal of the American Planning Association</b:JournalName>
+<b:Number>2</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2009</b:Year>
+<b:Volume>29</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Social impacts of transport: literature review and the state of the practice of transport appraisal in the Netherlands and the United Kingdom</b:Title>
+<b:BIBTEX_Abstract>Transport appraisals in European countries increasingly address three dimensions of sustainability—economic, ecological and social. However, social impacts of transport have been underexposed in (ex-ante) transport project appraisal, at least in the Netherlands. Firstly, this article presents a theoretical framework describing the relationships between determinants of social impacts of transport; it also provides a definition and categorization of those impacts. Secondly, the article reviews the state of the practice of national transport project appraisal in the Netherlands and the United Kingdom. The article shows that social impacts of transport investments can take on many forms and their levels of importance may vary widely, in project appraisal. The UK transport appraisal guidance includes a spectrum of social impacts through quantitative and qualitative assessments that is broader than the Dutch appraisal guidance. However, it does not cover the full range as identified in the literature. This holds, in particular, for the temporary impacts of transport investments, health impacts, social cohesion, the distribution and accumulation of impacts across population groups and social justice. All in all, it can be concluded that there is a long way to go before social impacts of transport projects are completely included in appraisals, in a way that allows us to compare them to economic and ecological effects.</b:BIBTEX_Abstract>
+<b:Tag>Geurs2009</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:BIBTEX_KeyWords>Equity, Accessibility</b:BIBTEX_KeyWords>
+<b:DOI>10.1080/01441640802130490</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Geurs</b:Last>
+<b:Middle>T.</b:Middle>
+<b:First>Karst</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Boon</b:Last>
+<b:First>Wouter</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Wee</b:Last>
+<b:Middle>Van</b:Middle>
+<b:First>Bert</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>69-90</b:Pages>
+<b:Month>1</b:Month>
+<b:JournalName>Transport Reviews</b:JournalName>
+<b:Number>1</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2000</b:Year>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The young person's guide to the Theil Index: suggesting intuitive interpretations and exploring analytical applications</b:Title>
+<b:Tag>Conceicao2000</b:Tag>
+<b:URL>https://utip.lbj.utexas.edu/papers/utip_14.pdf</b:URL>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Conceição</b:Last>
+<b:First>Pedro</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Ferreira</b:Last>
+<b:First>Pedro</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>UTIP Working Papers</b:JournalName>
+<b:Number>14</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2012</b:Year>
+<b:Volume>178</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Scale in the effect of accessibility on population change: GIS and a statistical approach to road, air and rail accessibility in Finland, 1990-2008</b:Title>
+<b:BIBTEX_Abstract>The matter of scale is often ignored when analysing accessibility and its effects on population change. While accessibility has a concentrating effect on the activities of society on a regional scale, it also has a decentralising effect within urban areas in developed countries, including Finland. Population change is the outcome of numerous individual location choices. However, the scale on which these choices form a pattern related to transport accessibility is unclear, because the increasing stochasticity in an accurate resolution forces consideration of the effect of accessibility on population dynamics in the context of local characteristics. The matter of scale on modelling the relationship between transport accessibility and population change is considered in this article by comparing results using six different resolutions: namely side lengths of grid cells involving 2, 4, 8, 12, 16 and 24 kilometres. Road, air and rail accessibility were related to population change with non-linear regression, generalised additive models (GAM). Road accessibility was assessed by potentials originating from a gravity model. For revealing the effect on population change, air and rail accessibility were calculated as travel times to airports and stations. Analyses were based on exact population grid-cell data, an accurate model of road and rail networks and using geographical information systems (GIS). The study shows that population change was strongly related to potential accessibility. Airport accessibility also had high importance, whereas railway accessibility did not have any significant effect. The relevance of modelled relationships was noted to be clearly dependent on geographical scale. The models have good predictive ability at a 24 x 24-km resolution, but in resolutions more accurate than 12x12 km, much of the predictive power decreases. Our results strongly indicate that scale matters in accessibility analysis, and it should be taken into account in forthcoming population change studies.</b:BIBTEX_Abstract>
+<b:Tag>Kotavaara_2012</b:Tag>
+<b:Publisher>Wiley</b:Publisher>
+<b:DOI>10.1111/j.1475-4959.2012.00460.x</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Kotavaara</b:Last>
+<b:First>Ossi</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Antikainen</b:Last>
+<b:First>Harri</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Marmion</b:Last>
+<b:First>Mathieu</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Rusanen</b:Last>
+<b:First>Jarmo</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>366-382</b:Pages>
+<b:Month>3</b:Month>
+<b:JournalName>The Geographical Journal</b:JournalName>
+<b:Number>4</b:Number>
+</b:Source>
+<b:Source>
+<b:Year>2019</b:Year>
+<b:Volume>74</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Measuring and visualizing place-based space-time job accessibility</b:Title>
+<b:Tag>Hu2019</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:DOI>10.1016/j.jtrangeo.2018.12.002</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Hu</b:Last>
+<b:First>Yujie</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Downs</b:Last>
+<b:First>Joni</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>278-288</b:Pages>
+<b:Month>1</b:Month>
 <b:JournalName>Journal of Transport Geography</b:JournalName>
 </b:Source>
 <b:Source>
-<b:Year>2003</b:Year>
-<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
-<b:SourceType>Book</b:SourceType>
-<b:Title>Making the connections: final report on transport and social exclusion</b:Title>
-<b:Tag>SEU2003</b:Tag>
-<b:Publisher>Office of the Deputy Prime Minister</b:Publisher>
+<b:Year>2011</b:Year>
+<b:Volume>14</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Industrial agglomeration and transport accessibility in metropolitan Seoul</b:Title>
+<b:BIBTEX_Abstract>This study aims to reveal the relationship between industrial agglomeration and transport accessibility in the Seoul metropolitan area. Our study suggests that in spite of the rapid expansion of the Seoul metropolitan area, central business districts still function as centers of the industry and transportation system; the agglomeration of most industrial subsectors are occurring in central areas and only primary and manufacturing sectors’ clusters are located out of these areas; both of subway and road networks show higher level of accessibility in central Seoul and big cities. This implies a strong relationship between the industrial agglomeration and the transport accessibility, and such hypothetical relationship is tested for every industrial subsector using logit analysis. Our findings indicate that although there are industrial variations in the magnitude of impacts and the significance level, transport networks are, in general, positively associated with industrial agglomeration and this is especially true for service sectors.</b:BIBTEX_Abstract>
+<b:Tag>Song2011</b:Tag>
+<b:Publisher>Springer Nature</b:Publisher>
+<b:BIBTEX_KeyWords>Agglomeration, transport, industry</b:BIBTEX_KeyWords>
+<b:DOI>10.1007/s10109-011-0150-z</b:DOI>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>Unit</b:Last>
-<b:Middle>Exclusion</b:Middle>
-<b:First>Social</b:First>
+<b:Last>Song</b:Last>
+<b:First>Yena</b:First>
 </b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-</b:Source>
-<b:Source>
-<b:Year>2018</b:Year>
-<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
-<b:SourceType>Book</b:SourceType>
-<b:Title>Travel in London: report 11</b:Title>
-<b:Tag>TfL2018</b:Tag>
-<b:Publisher>Transport for London</b:Publisher>
-<b:URL>http://content.tfl.gov.uk/travel-in-london-report-11.pdf</b:URL>
-<b:Author>
-<b:Author>
-<b:NameList>
 <b:Person>
-<b:Last>London</b:Last>
-<b:First>Transport</b:First>
+<b:Last>Lee</b:Last>
+<b:First>Keumsook</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Anderson</b:Last>
+<b:Middle>P.</b:Middle>
+<b:First>William</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Lakshmanan</b:Last>
+<b:Middle>R.</b:Middle>
+<b:First>T.</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
+<b:Pages>299-318</b:Pages>
+<b:Month>5</b:Month>
+<b:JournalName>Journal of Geographical Systems</b:JournalName>
+<b:Number>3</b:Number>
 </b:Source>
 <b:Source>
 <b:Year>2018</b:Year>
@@ -992,279 +1264,28 @@
 <b:Number>1</b:Number>
 </b:Source>
 <b:Source>
-<b:Year>2015</b:Year>
-<b:Volume>4</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Transport accessibility analysis using GIS: assessing sustainable transport in London</b:Title>
-<b:BIBTEX_Abstract>Transport accessibility is an important driver of urban growth and key to the sustainable development of cities. This paper presents a simple GIS-based tool developed to allow the rapid analysis of accessibility by different transport modes. Designed to be flexible and use publicly-available data, this tool (built in ArcGIS) uses generalized cost to measure transport costs across networks including monetary and distance components. The utility of the tool is demonstrated on London, UK, showing the differing patterns of accessibility across the city by different modes. It is shown that these patterns can be examined spatially, by accessibility to particular destinations (e.g., employment locations), or as a global measure across a whole city system. A number of future infrastructure scenarios are tested, examining the potential for increasing the use of low-carbon forms of transport. It is shown that private car journeys are still the least cost mode choice in London, but that infrastructure investments can play a part in reducing the cost of more sustainable transport options.</b:BIBTEX_Abstract>
-<b:Tag>Ford2015</b:Tag>
-<b:Publisher>MDPI AG</b:Publisher>
-<b:BIBTEX_KeyWords>Network, accessibility, generalised cost, GLA</b:BIBTEX_KeyWords>
-<b:DOI>10.3390/ijgi4010124</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Ford</b:Last>
-<b:First>Alistair</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Barr</b:Last>
-<b:First>Stuart</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Dawson</b:Last>
-<b:First>Richard</b:First>
-</b:Person>
-<b:Person>
-<b:Last>James</b:Last>
-<b:First>Philip</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>124-149</b:Pages>
-<b:Month>1</b:Month>
-<b:JournalName>ISPRS International Journal of Geo-Information</b:JournalName>
-<b:Number>1</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2019</b:Year>
-<b:Volume>74</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Measuring and visualizing place-based space-time job accessibility</b:Title>
-<b:Tag>Hu2019</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.jtrangeo.2018.12.002</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Hu</b:Last>
-<b:First>Yujie</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Downs</b:Last>
-<b:First>Joni</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>278-288</b:Pages>
-<b:Month>1</b:Month>
-<b:JournalName>Journal of Transport Geography</b:JournalName>
-</b:Source>
-<b:Source>
 <b:Year>2019</b:Year>
 <b:BIBTEX_Entry>electronic</b:BIBTEX_Entry>
 <b:SourceType>ElectronicSource</b:SourceType>
-<b:Title>Transport for London unified API</b:Title>
-<b:Tag>TfL2019a</b:Tag>
-<b:URL>https://api.tfl.gov.uk</b:URL>
+<b:Title>How unpredictable is your subway commute? We'll show you</b:Title>
+<b:URL>https://www.nytimes.com/interactive/2019/07/08/upshot/nyc-subway-variability-calculator.html</b:URL>
 <b:Author>
 <b:Author>
 <b:NameList>
 <b:Person>
-<b:Last>London</b:Last>
-<b:First>Transport</b:First>
+<b:Last>Katz</b:Last>
+<b:First>Josh</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Quealy</b:Last>
+<b:First>Kevin</b:First>
 </b:Person>
 </b:NameList>
 </b:Author>
 </b:Author>
-</b:Source>
-<b:Source>
-<b:Year>2015</b:Year>
-<b:Volume>43</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>A method to evaluate equitable accessibility: combining ethical theories and accessibility-based approaches</b:Title>
-<b:BIBTEX_Abstract>In this paper, we present the case that traditional transport appraisal methods do not sufficiently capture the social dimensions of mobility and accessibility. However, understanding this is highly relevant for policymakers to understand the impacts of their transport decisions. These dimensions include the distribution of mobility and accessibility levels over particular areas or for specific population groups, as well as how this may affect various social outcomes, including their levels of participation, social inclusion and community cohesion. In response, we propose a method to assess the socially relevant accessibility impacts (SRAIs) of policies in some of these key dimensions. The method combines the use of underlying ethics principles, more specifically the theories of egalitarianism and sufficientarianism, in combination with accessibility-based analysis and the Lorenz curve and Gini index. We then demonstrate the method in a case study example. Our suggestion is that policymakers can use these ethical perspectives to determine the equity of their policies decisions and to set minimum standards for local transport delivery. This will help them to become more confident in the development and adoption of new decision frameworks that promote accessibility over mobility and which also disaggregate the costs and benefits of transport policies over particular areas or for specific under-served population groups.</b:BIBTEX_Abstract>
-<b:Tag>Lucas2015</b:Tag>
-<b:Publisher>Springer Nature</b:Publisher>
-<b:BIBTEX_KeyWords>Equity, accessibility, ethics, Lorenz curve, Gini index</b:BIBTEX_KeyWords>
-<b:DOI>10.1007/s11116-015-9585-2</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Lucas</b:Last>
-<b:First>Karen</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Wee</b:Last>
-<b:First>Bert</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Maat</b:Last>
-<b:First>Kees</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>473-490</b:Pages>
-<b:Month>3</b:Month>
-<b:JournalName>Transportation</b:JournalName>
-<b:Number>3</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2018</b:Year>
-<b:Volume>3</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Governing urban accessibility: moving beyond transport and mobility</b:Title>
-<b:BIBTEX_Abstract>Access to people, goods, ideas and services is the basis of economic development in cities. The better this access, the greater the economic benefits through economies of scale, agglomeration effects and networking advantages. The way in which cities facilitate accessibility also impacts directly on other key aspects of human development, social inclusion and well-being. Accessibility is created through a complex interplay of urban form and transport systems. Thus, governing urban accessibility requires moving beyond conventional urban transport considerations linked to mobility and movement. Such a re-framing implies a far greater recognition of urban form characteristics like land use, distribution of densities and urban design, in addition to transport characteristics like infrastructures, service levels and travel speeds. A new interface between these characteristics has emerged as a result of shared mobility systems, putting additional pressure on city governments to act as system integrators. Based on a literature review, empirical insights from a global survey and the case-study cities of London, NYC and Berlin, this paper explores the institutional capacities of shifting from governing urban transport to urban accessibility. The evidence shows that there are entrenched misalignments which may impact negatively on the capacity to pair planning and policies essential for delivering better accessibility. Furthermore, it is clear that “hierarchies” and “networks” are not mutually exclusive when it comes to integrated governance of accessibility. The findings also suggest that cities may be better equipped to integrate shared mobility and consider mobility as a service than to pursue more wide-ranging metropolitan accessibility policies.</b:BIBTEX_Abstract>
-<b:Tag>Rode_2018</b:Tag>
-<b:Publisher>Informa UK Limited</b:Publisher>
-<b:DOI>10.1080/23800127.2018.1438149</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Rode</b:Last>
-<b:First>Philipp</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Cruz</b:Last>
-<b:Middle>F.</b:Middle>
-<b:First>Nuno</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>8-33</b:Pages>
-<b:Month>1</b:Month>
-<b:JournalName>Applied Mobilities</b:JournalName>
-<b:Number>1</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2018</b:Year>
-<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
-<b:SourceType>Book</b:SourceType>
-<b:Title>Mayor's transport strategy: March 2018</b:Title>
-<b:Tag>GLA2018</b:Tag>
-<b:Publisher>Greater London Authority</b:Publisher>
-<b:URL>https://www.london.gov.uk/sites/default/files/mayors-transport-strategy-2018.pdf</b:URL>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Authority</b:Last>
-<b:Middle>London</b:Middle>
-<b:First>Greater</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-</b:Source>
-<b:Source>
-<b:Year>2012</b:Year>
-<b:Volume>102</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Measurement, optimization, and impact of health care accessibility: a methodological review</b:Title>
-<b:Tag>Wang_2012</b:Tag>
-<b:Publisher>Informa UK Limited</b:Publisher>
-<b:DOI>10.1080/00045608.2012.657146</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Wang</b:Last>
-<b:First>Fahui</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>1104-1112</b:Pages>
-<b:Month>9</b:Month>
-<b:JournalName>Annals of the Association of American Geographers</b:JournalName>
-<b:Number>5</b:Number>
-</b:Source>
-<b:Source>
-<b:Year>2013</b:Year>
-<b:Volume>30</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Measuring urban job accessibility with distance decay, competition and diversity</b:Title>
-<b:Tag>Cheng2013</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.jtrangeo.2013.03.005</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Cheng</b:Last>
-<b:First>Jianquan</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Bertolini</b:Last>
-<b:First>Luca</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>100-109</b:Pages>
-<b:Month>6</b:Month>
-<b:JournalName>Journal of Transport Geography</b:JournalName>
-</b:Source>
-<b:Source>
-<b:Year>2017</b:Year>
-<b:Volume>58</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Assessing equity in transport accessibility to work and study: the Bogotá region</b:Title>
-<b:BIBTEX_Abstract>This researchwas aimed at exploring levels of equity in accessibility to employment and education in the city-region of Bogotá, Colombia's capital city. Building on consolidated methodologies for the assessment of potential accessibility, we estimate accessibility indicators at the zone level, evaluate how potential accessibility varies among income groups, and present evidence related to transport mode, in order to analyze social and spatial inequalities produced by the distribution of accessibility to employment and education activities. The research incorporates a method to evaluate how accessibility varies among zones according to average income and mode of transport in order to produce evidence-based arguments that can inform transport policy in the city-region of Bogotá, and other similar contexts in the Global South. Our results show strong distributional effects of the socio-spatial and economic structure of the city-region, its transport infrastructure and services, and the effect of current transport and land-use policies for citizens of different income groups. The tools and empirical evidence in this research seek to contribute to informed policy development in Latin America and other developing contexts, and feeding current debates on the role of accessibility in addressing social and spatial inequalities stemming from urban mobility</b:BIBTEX_Abstract>
-<b:Tag>Guzman2017</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:DOI>10.1016/j.jtrangeo.2016.12.016</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Guzman</b:Last>
-<b:Middle>A.</b:Middle>
-<b:First>Luis</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Oviedo</b:Last>
-<b:First>Daniel</b:First>
-</b:Person>
-<b:Person>
-<b:Last>Rivera</b:Last>
-<b:First>Carlos</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>236-246</b:Pages>
-<b:Month>1</b:Month>
-<b:JournalName>Journal of Transport Geography</b:JournalName>
-</b:Source>
-<b:Source>
-<b:Year>2012</b:Year>
-<b:Volume>20</b:Volume>
-<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
-<b:SourceType>JournalArticle</b:SourceType>
-<b:Title>Transport and social exclusion: where are we now?</b:Title>
-<b:BIBTEX_Abstract>The late 1990s and early 2000s witnessed a growing interest amongst UK academics and policy makers in the issue of transport disadvantage and, more innovatively, how this might relate to growing concerns about the social exclusion of low income groups and communities. Studies (predominantly in the United Kingdom) began to make more explicit the links policy between poverty, transport disadvantage, access to key services and economic and social exclusion (see for example Church and Frost, 2000; TRaC, 2000; Lucas et al., 2001; Kenyon 2003; Kenyon et al., 2003; Hodgson and Turner, 2003; Raje, 2003).By 2003, the UK Social Exclusion Unit had published and its now internationally recognised report on this subject, which subsequently resulted in the development of a set of transport policy guidances to local authorities in England to deliver what is now commonly referred to as accessibility planning as part of their Local Transport Plans (Department for Transport, 2006). Since this time, researchers, policy makers and practitioners in several other countries became interested in adopting a social exclusion approach to transport planning, largely because of its utility in identifying the role of transport, land use planning and service delivery decisions in creating and reinforcing poverty and social disadvantage.Eight years on from the SEU report, we can begin to reflect on the extent to which a social exclusion approach to the research of transport disadvantage has been successful in opening up new avenues of research enquiry and/or identifying new theoretical perspectives and/or methodological approaches. The paper begins by briefly revisiting the basic theories and core definitions which underpin and inform a social exclusion perspective. It then considers how these have been translated and understood in terms of transport. Secondly, it considers some of the emergent empirical research of transport-related exclusion that has attempted to measure and model the interactions between transport and mobility inequalities and relational negative social outcomes. Thirdly, it offers observations on progress in some key areas of policy and practice, with specific reference to the UK and Australia. It concludes by suggesting how further progress might be made on this issue and considers whether the social exclusion agenda is still a relevant approach for achieving this.</b:BIBTEX_Abstract>
-<b:Tag>Lucas2012</b:Tag>
-<b:Publisher>Elsevier BV</b:Publisher>
-<b:BIBTEX_KeyWords>Transport, equity, social exclusion, personal, time poverty, relative, hypermobility</b:BIBTEX_KeyWords>
-<b:DOI>10.1016/j.tranpol.2012.01.013</b:DOI>
-<b:Author>
-<b:Author>
-<b:NameList>
-<b:Person>
-<b:Last>Lucas</b:Last>
-<b:First>Karen</b:First>
-</b:Person>
-</b:NameList>
-</b:Author>
-</b:Author>
-<b:Pages>105-113</b:Pages>
-<b:Month>3</b:Month>
-<b:JournalName>Transport Policy</b:JournalName>
+<b:Month>7</b:Month>
+<b:City>New</b:City>
+<b:StateProvince>York</b:StateProvince>
+<b:CountryRegion>NY</b:CountryRegion>
 </b:Source>
 </b:Sources>
