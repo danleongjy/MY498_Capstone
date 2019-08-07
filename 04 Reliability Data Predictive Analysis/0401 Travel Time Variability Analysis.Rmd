@@ -12,6 +12,8 @@ library(ggplot2)
 ```
 
 ## Data Prep
+Cells in this section cannot be run without original databases
+
 ### Read in AM peak baseline fastest option data
 ```{r}
 db <- DBI::dbConnect(RSQLite::SQLite(), paste0(wd,'/20190322_0830/traveloptions.db'))
@@ -74,6 +76,18 @@ ttm_baseline_fastestoption <- baseline_fastestoption[,c('orig_id','dest_id','tra
 rownames(ttm_baseline_fastestoption) <- ttm_baseline_fastestoption$orig_id
 ttm_baseline_fastestoption$orig_id <- NULL
 ttm_baseline_fastestoption[c(1:5),c(1:5)] # print first 5 x 5 square of data
+```
+### Save out compiled data
+```{r}
+save(regressiondf, ttm_baseline_fastestoption, file = 'r_analysis_data.RData')
+```
+
+## Regression Analysis of RBTs
+Cells in this section can be run with the provided .RData file
+
+### Read in compiled data
+```{r}
+load('r_analysis_data.RData')
 ```
 
 ### Calculate similarity of travel times between all pairs of MSOAs based on Euclidean Distance of travel times to 7 destinations
@@ -172,10 +186,10 @@ for (row in 1:nrow(regressiondf)) {
   regressiondf[row,]$dv_local_mean <- mean(unlist(dv_local_mean[,dv]))
 }
 
-plot(unlist(regressiondf[,dv]), regressiondf$dv_local_mean, xlab = '90% HPD Interval Width', ylab = 'Local Mean of 90% HPD Interval Width')
-title(paste(c('Pearson Correlation between Interval Width and\nLocal Mean Interval Width:', round(cor(regressiondf[,dv], regressiondf$dv_local_mean), 2)), collapse = ''))
+plot(unlist(regressiondf[,dv]), regressiondf$dv_local_mean, xlab = 'RBT', ylab = 'Local Mean RBT')
+title(paste(c('Pearson Correlation between RBT and\nLocal Mean RBT:', round(cor(regressiondf[,dv], regressiondf$dv_local_mean), 2)), collapse = ''))
 ```
-### Examine correlation between baseline and actual median travel times
+### Figure 16: Examine correlation between baseline and actual median travel times
 ```{r}
 plot(regressiondf$traveltime, regressiondf$median_traveltime, xlab = 'Baseline Travel Time (min)', ylab = 'Observed Median Travel Time (min)')
 lines(c(0,150),c(0,150), col = 'red')
@@ -196,7 +210,7 @@ londontube <- spTransform(londontube, CRS('+init=epsg:27700'))
 londonrail <- readOGR(dsn = '../90 Data/misc', layer = 'Tracks')
 londonrail <- spTransform(londonrail, CRS('+init=epsg:27700'))
 ```
-### Visualise calculation of local mean for Stratford, E02000726
+### Figure 2: Visualise calculation of local mean for Stratford, E02000726
 ```{r fig.width = 9, fig.height = 8}
 # compile data for Stratford
 stratford_localcluster <- data.frame(dist_baseline_fastestoption['E02000726',])
@@ -238,7 +252,7 @@ lm_formula <- as.formula(paste(dv, '~', paste(ivs, collapse = ' + ')))
 lm_global_local_spillovers <- lm(lm_formula, data = regressiondf)
 summary(lm_global_local_spillovers)
 ```
-If neighbours' 90% HPD interval widths are high, then own interval width also tends to be high.  After controlling for this, increased reliance on bus, National Rail and Overground tend to increase the interval width, while tram tends to decrease the interval width.
+If neighbours' RBTs are high, then own RBT also tends to be high.  After controlling for this, increased reliance on bus, National Rail and Overground tend to increase the interval width, while tram tends to decrease the interval width.
 
 ## Locally Weighted Regression with Local Spillovers
 ### Set up dataframes to store results
@@ -250,14 +264,16 @@ results_lwr02 <- prep_results_containers(dist_baseline_fastestoption, regression
 results_lwr02 <- locally_weighted_regression(regressiondf, ivs, dv, dist_baseline_fastestoption, results_lwr02, .03)
 ```
 
-```{r}
-plot_results(regressiondf, results_lwr02$results_predictions, dv, 'Locally Weighted Regression with Local Spillovers\n', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
-```
 ```{r fig.height = 5, fig.width = 10}
 par(mfrow = c(1,2))
 plot_results(regressiondf, data.frame(prediction = lm_global_local_spillovers$fitted.values), dv, 'OLS with Spillovers\n', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
 plot_results(regressiondf, results_lwr02$results_predictions, dv, 'LWR with Spillovers\n', xlabel = 'Actual 90% HPD Interval Width', ylabel = 'Predicted 90% HPD Interval Width')
 ```
+```{r}
+summary(results_lwr02$results_localrsqadj$local_rsq)
+```
+
+
 ## Visualisation of Coefficients
 ### join results
 ```{r}
@@ -284,7 +300,7 @@ colnames(results_lwr02_localrsqadj_spatial@data) <- c('Local Rsq Adj')
 is.na(results_lwr02_coefs_spatial@data) <- !as.matrix(results_lwr02_pvals_spatial@data < .1)
 
 ```
-### Visualise data
+### Figure 13: Visualise local coefficient estimates
 ```{r fig.width = 18, fig.height = 24}
 tmap_mode('plot') # set to plotting mode
 tm_shape(results_lwr02_coefs_spatial) + 
@@ -296,6 +312,7 @@ tm_shape(londonrail) +
 tm_facets(ncol = 3, nrow = ceiling(ncol(results_lwr02_coefs_spatial) / 3), sync = T) + 
 tm_layout(legend.position = c('left','bottom'), outer.margins = c(0,0,0,0), frame = F, legend.text.size = 1.5, legend.title.size = 1.5)
 ```
+### Figure 19: Visualise local adjusted Rsq
 ```{r fig.width = 9, fig.height = 8}
 tmap_mode('plot') # set to plotting mode
 tm_shape(results_lwr02_localrsqadj_spatial) + 
@@ -306,7 +323,7 @@ tm_shape(londonrail) +
   tm_lines(lwd = .1, col = 'black') +
 tm_layout(outer.margins = c(0,0,0,0), legend.position = c('left','bottom'), frame = F)
 ```
-
+### Figure 20: visualise p-values for local coefficient estimates
 ```{r fig.width = 18, fig.height = 24}
 tmap_mode('plot') # set to plotting mode
 tm_shape(results_lwr02_pvals_spatial) + 
