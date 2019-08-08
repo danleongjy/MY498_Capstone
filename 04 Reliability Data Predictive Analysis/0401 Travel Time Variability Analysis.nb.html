@@ -244,7 +244,7 @@ regressiondf$traveltime_95pc_minus_baseline &lt;- regressiondf$traveltime_95pc -
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Successfully compiled 6881 OD pairs of data on the distribution of observed travel times. Available columns: orig_id, dest_id, median_traveltime, traveltime_5pc, traveltime_95pc, option_id, starttime, traveltime, fare, transfers, legs, dist, first_zoned_station, last_zoned_station, dist_walking, legs_walking, time_walking, dist_dlr, legs_dlr, time_dlr, dist_bus, legs_bus, time_bus, dist_cycle, legs_cycle, time_cycle, dist_tube, legs_tube, time_tube, dist_tflrail, legs_tflrail, time_tflrail, dist_nationalrail, legs_nationalrail, time_nationalrail, dist_coach, legs_coach, time_coach, dist_overground, legs_overground, time_overground, dist_tram, legs_tram, time_tram, dist_riverbus, legs_riverbus, time_riverbus, dist_replacementbus, legs_replacementbus, time_replacementbus, traveltime_95pc_minus_median, traveltime_95pc_minus_5pc, traveltime_95pc_minus_baseline, dv_local_mean</p>
+<p>Successfully compiled 6881 OD pairs of data on the distribution of observed travel times. Available columns: orig_id, dest_id, median_traveltime, traveltime_5pc, traveltime_95pc, option_id, starttime, traveltime, fare, transfers, legs, dist, first_zoned_station, last_zoned_station, dist_walking, legs_walking, time_walking, dist_dlr, legs_dlr, time_dlr, dist_bus, legs_bus, time_bus, dist_cycle, legs_cycle, time_cycle, dist_tube, legs_tube, time_tube, dist_tflrail, legs_tflrail, time_tflrail, dist_nationalrail, legs_nationalrail, time_nationalrail, dist_coach, legs_coach, time_coach, dist_overground, legs_overground, time_overground, dist_tram, legs_tram, time_tram, dist_riverbus, legs_riverbus, time_riverbus, dist_replacementbus, legs_replacementbus, time_replacementbus, traveltime_95pc_minus_median, traveltime_95pc_minus_5pc, traveltime_95pc_minus_baseline</p>
 </div>
 <div id="construct-travel-time-matrix" class="section level3">
 <h3>Construct travel time matrix</h3>
@@ -261,7 +261,7 @@ rownames(ttm_baseline_fastestoption) &lt;- ttm_baseline_fastestoption$orig_id</c
 <pre class="r"><code>ttm_baseline_fastestoption$orig_id &lt;- NULL
 ttm_baseline_fastestoption[c(1:5),c(1:5)] # print first 5 x 5 square of data</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6NSwibnJvdyI6NX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVJUVS9ETUF6MTBuV29sVGFRK0JkSXE4Wm9wM0VpQnpZdUNNSDRLbkFLWFJrVkpaM2FUdU80bjhiL1FscEpHdWVRV0VwdHY3eG5PKzdpTWg3N3NROEFCQnpYQWVLSXNFdkVwd05kOEtUL0FYQ09SZUNLTTVDZW5rQnI5R2FuL0RYbWQ3L0szMUpBVS93NThwNlI5Nmp1YVl4NERDYi9Dbmt4TmZtdnVvNVYvd0w1QzdNL2ZVRCt2Y1dmSWY4Rjc1OVE5NmJyNzVCdUxNTGw3RHV0UkhEVUxrT0IzbXcwSGtrN05ZR3phV2dDWVJTWlFCUk5UV0FTbmxzZHZiTFlCcnByWHh3aUIydWE1czhlTGNsWnBVZlRvTDlrTlFzK1NxRVgyZDZTSEJUck9pdTRFQkg1YzN1V3VGTmF3T0dHeTBtV3crUnp3NytHRTVzL2x4MWJRRmtmWTllTTVReWtRWEVQeGIyVXJ6S2U2c2ZrN0QzTjlaaGJWdktNcnpBZGlJMjBDd25XWmNaci9WS0JWa0ZkMUV6TC9LVElOZEsrSGZiL25sWlFaZW9DQUFBPSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6NSwibnJvdyI6NX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVJUVStEUUJDZFFzRkEwcWFKLzhLa3BDS1k5dVFlYkwwWW8vVUw5YlJTckVSY0dxQ3B4LzQwLzVkSmNaZWRQZXhPc3N6TTIvZG1ab2ZsWlJMNmlROEFGdGlPRFpiTnc3N0ZQejNvZ3lmOEQ0Qjl6QU9IbjZIdzVBUTZJemQ3NmE4eHYvdVYvcFlBbXVRdmtQZU12RWQ1VHhMRUU5RDVWOGhMaU01L1ZYV00raGZJWCtyOXlRUHk3dzMrSFBrdmVQK0V1amRWZjQ5MGJSRU9vOTlaellOUnR3d0pldk5KT0JGMnFnTm4wMGdIb2pqV2dUaWU2c0I1TkRNNmVsVzVDMVRYQVQrV0dLeHQyejl6dExTZ3RScE5nZjZLTmpUNHFMaWVad2REY2xSdW1yeGtYR1NKbitzYTRsNWxBS010RTVPc3h1bm5sbjJOdzVrcFdJaVdIU0J0Z0xHangySUlxMFd4aTJJM1krdWNaZW8xQlgzUENqWG5qbFlzWjJ0TWgzd2wzVWFDVFpXelJqMlZvM1hRbEExVk1qOHRDNFYwajRmRFA2V0JWQ0xyQWdBQSJ9 -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["E02000001"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["E02000384"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["E02000455"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["E02000558"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["E02000649"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"13","2":"45","3":"46","4":"31","5":"42"},{"1":"61","2":"92","3":"97","4":"75","5":"102"},{"1":"56","2":"85","3":"85","4":"65","5":"91"},{"1":"71","2":"98","3":"106","4":"82","5":"110"},{"1":"65","2":"96","3":"93","4":"77","5":"94"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
@@ -607,9 +607,8 @@ plot_results(regressiondf, results_lwr02$results_predictions, dv, 'LWR with Spil
 <!-- rnb-plot-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShyZXN1bHRzX2x3cjAyJHJlc3VsdHNfbG9jYWxyc3FhZGokbG9jYWxfcnNxKVxuXG5gYGAifQ== -->
-<pre class="r"><code>summary(results_lwr02$results_localrsqadj$local_rsq)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShyZXN1bHRzX2x3cjAyJHJlc3VsdHNfbG9jYWxyc3FhZGokbG9jYWxfcnNxKVxuYGBgIn0= -->
+<pre class="r"><code>summary(results_lwr02$results_localrsqadj$local_rsq)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiICAgTWluLiAxc3QgUXUuICBNZWRpYW4gICAgTWVhbiAzcmQgUXUuICAgIE1heC4gXG4wLjA0ODUyIDAuMTY1NjUgMC4yMzQyNSAwLjI3ODExIDAuMzc4OTUgMC42ODkxNSBcbiJ9 -->
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
